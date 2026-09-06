@@ -3,12 +3,11 @@ layout: default
 title: Home
 ---
 
-
 <div class="home-container">
 
 
   <!-- =====================================================
-       TOP / INTRODUCTION
+       INTRODUCTION
        ===================================================== -->
 
   <section class="home-hero">
@@ -27,7 +26,7 @@ title: Home
 
 
 
-    <!-- INTRODUCTION -->
+    <!-- ABOUT ME -->
 
     <div class="home-intro">
 
@@ -37,10 +36,11 @@ title: Home
       </h1>
 
 
-
-      <!-- ================================================
-           EDIT THIS: ABOUT PARAGRAPH 1
-           ================================================ -->
+      <!--
+        BIO:
+        We can rewrite this later once you give me
+        exactly what you want recruiters to know.
+      -->
 
       <p class="home-bio">
 
@@ -50,11 +50,6 @@ title: Home
 
       </p>
 
-
-
-      <!-- ================================================
-           EDIT THIS: ABOUT PARAGRAPH 2
-           ================================================ -->
 
       <p class="home-bio">
 
@@ -67,26 +62,26 @@ title: Home
 
 
 
-      <!-- ================================================
-           EDIT THIS: EMAIL
-           ================================================ -->
+      <!-- CONTACT -->
 
       <p class="home-contact">
 
         Contact me at
 
-        <a href="mailto:YOUR_EMAIL@cornell.edu">
-          YOUR_EMAIL@cornell.edu
+        <a href="mailto:aaa387@cornell.edu">
+          aaa387@cornell.edu
         </a>
 
       </p>
 
 
 
+      <!-- RESUME + LINKEDIN -->
+
       <div class="home-links">
 
 
-        <!-- YOUR ACTUAL RESUME FILE -->
+        <!-- RESUME -->
 
         <a
           class="resume-download"
@@ -102,16 +97,14 @@ title: Home
 
 
 
-        <!-- ================================================
-             EDIT THIS: LINKEDIN
-             ================================================ -->
+        <!-- LINKEDIN -->
 
         <a
           class="linkedin-button"
-          href="https://www.linkedin.com/in/YOUR-LINKEDIN/"
+          href="https://www.linkedin.com/in/aahil-ali/"
           target="_blank"
           rel="noopener"
-          aria-label="LinkedIn">
+          aria-label="Aahil Ali LinkedIn">
 
           <i class="bi bi-linkedin"></i>
 
@@ -129,13 +122,13 @@ title: Home
 
 
   <!-- =====================================================
-       SKILLS / INTERESTS / HOBBIES
+       SKILLS / INTERESTS
        ===================================================== -->
 
   <section class="home-details">
 
 
-    <!-- LEFT COLUMN -->
+    <!-- LEFT COLUMN: SKILLS -->
 
     <div>
 
@@ -146,7 +139,7 @@ title: Home
 
 
 
-      <!-- EDIT THIS -->
+      <!-- CHANGE LATER -->
 
       <div class="skill-group">
 
@@ -155,14 +148,14 @@ title: Home
         </div>
 
         <p class="skill-text">
-          YOUR SOFTWARE HERE
+          ADD SOFTWARE HERE
         </p>
 
       </div>
 
 
 
-      <!-- EDIT THIS -->
+      <!-- CHANGE LATER -->
 
       <div class="skill-group">
 
@@ -171,14 +164,14 @@ title: Home
         </div>
 
         <p class="skill-text">
-          YOUR MANUFACTURING SKILLS HERE
+          ADD MANUFACTURING SKILLS HERE
         </p>
 
       </div>
 
 
 
-      <!-- EDIT THIS -->
+      <!-- CHANGE LATER -->
 
       <div class="skill-group">
 
@@ -187,14 +180,14 @@ title: Home
         </div>
 
         <p class="skill-text">
-          YOUR PROGRAMMING / TECHNICAL TOOLS HERE
+          ADD PROGRAMMING AND TECHNICAL TOOLS HERE
         </p>
 
       </div>
 
 
 
-      <!-- EDIT / ADD MORE IF NEEDED -->
+      <!-- CHANGE LATER -->
 
       <div class="skill-group">
 
@@ -203,7 +196,7 @@ title: Home
         </div>
 
         <p class="skill-text">
-          YOUR ENGINEERING SKILLS HERE
+          ADD ENGINEERING SKILLS HERE
         </p>
 
       </div>
@@ -227,40 +220,48 @@ title: Home
 
       <ul class="home-list">
 
-        <li>YOUR INTEREST</li>
+        <li>Mechanical Design</li>
 
-        <li>YOUR INTEREST</li>
+        <li>Manufacturing Engineering</li>
 
-        <li>YOUR INTEREST</li>
+        <li>Automotive Engineering</li>
 
-        <li>YOUR INTEREST</li>
+        <li>Aerospace Engineering</li>
+
+        <li>Robotics & Hardware</li>
 
       </ul>
 
 
 
-      <!-- HOBBIES -->
+      <!-- =================================================
+           HOBBIES
+
+           I AM LEAVING THIS HIDDEN FOR NOW.
+
+           When you're ready, remove the opening
+           and closing comment markers and change
+           the hobbies below.
 
       <div class="hobbies">
-
 
         <h2 class="home-section-heading">
           HOBBIES
         </h2>
 
-
         <ul class="home-list">
 
-          <li>YOUR HOBBY</li>
+          <li>ADD HOBBY</li>
 
-          <li>YOUR HOBBY</li>
+          <li>ADD HOBBY</li>
 
-          <li>YOUR HOBBY</li>
+          <li>ADD HOBBY</li>
 
         </ul>
 
-
       </div>
+
+           ================================================= -->
 
 
     </div>
@@ -288,6 +289,14 @@ title: Home
     <div class="projects-grid">
 
 
+      <!--
+        DO NOT MANUALLY ADD PROJECTS HERE.
+
+        Every file inside _projects automatically
+        becomes a project card on this homepage.
+      -->
+
+
       {% assign homepage_projects = site.projects | sort: "path" | reverse %}
 
 
@@ -299,7 +308,10 @@ title: Home
           href="{{ project.url | relative_url }}">
 
 
-          <!-- PROJECT IMAGE -->
+
+          <!-- ===============================
+               PROJECT IMAGE
+               =============================== -->
 
           {% if project.image %}
 
@@ -312,9 +324,10 @@ title: Home
 
 
 
-            <!-- EXTERNAL IMAGE -->
+            <!-- ONLINE IMAGE -->
 
             {% if first_four == "http" %}
+
 
               <img
                 class="home-project-image"
@@ -323,55 +336,65 @@ title: Home
 
 
 
-            <!-- IMAGE PATH ALREADY CONTAINS ASSETS -->
+            <!-- IMAGE ALREADY HAS assets/ IN PATH -->
 
             {% elsif image_name contains "assets/" %}
 
 
               {% if first_character == "/" %}
 
+
                 <img
                   class="home-project-image"
                   src="{{ image_name | relative_url }}"
                   alt="{{ project.title }}">
 
+
               {% else %}
 
+
                 {% assign full_asset_path = "/" | append: image_name %}
+
 
                 <img
                   class="home-project-image"
                   src="{{ full_asset_path | relative_url }}"
                   alt="{{ project.title }}">
 
+
               {% endif %}
 
 
 
-            <!-- JUST A FILENAME -->
+            <!-- JUST AN IMAGE FILENAME -->
 
             {% else %}
 
+
               {% assign image_path = "/assets/images/" | append: image_name %}
+
 
               <img
                 class="home-project-image"
                 src="{{ image_path | relative_url }}"
                 alt="{{ project.title }}">
 
+
             {% endif %}
 
 
 
-          <!-- NO IMAGE FOUND -->
+          <!-- NO PROJECT IMAGE YET -->
 
           {% else %}
+
 
             <div class="project-placeholder">
 
               {{ project.title }}
 
             </div>
+
 
           {% endif %}
 
