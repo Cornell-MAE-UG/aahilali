@@ -2,20 +2,353 @@
 layout: default
 ---
 
-<article class="project-page">
+<article class="portfolio-project">
 
-  <h1>{{ page.title }}</h1>
 
-  {% if page.image %}
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-hero-image">
+  <!-- =====================================================
+       PROJECT HERO
+       ===================================================== -->
+
+  <header class="project-page-hero">
+
+
+    {% if page.category %}
+      <div class="project-kicker">
+        {{ page.category }}
+      </div>
+    {% endif %}
+
+
+    <h1 class="project-page-title">
+      {{ page.title }}
+    </h1>
+
+
+    {% if page.subtitle %}
+      <p class="project-page-subtitle">
+        {{ page.subtitle }}
+      </p>
+    {% endif %}
+
+
+    <div class="project-meta">
+
+      {% if page.date_range %}
+        <span>
+          {{ page.date_range }}
+        </span>
+      {% endif %}
+
+
+      {% if page.role %}
+
+        {% if page.date_range %}
+          <span class="meta-divider">•</span>
+        {% endif %}
+
+        <span>
+          {{ page.role }}
+        </span>
+
+      {% endif %}
+
+    </div>
+
+
+
+    <!-- OPTIONAL BUTTONS -->
+
+    {% if page.external_url or page.gallery_url %}
+
+      <div class="project-hero-links">
+
+        {% if page.external_url %}
+
+          <a
+            class="project-action primary"
+            href="{{ page.external_url }}"
+            target="_blank"
+            rel="noopener">
+
+            {{ page.external_label | default: "Learn More" }}
+
+          </a>
+
+        {% endif %}
+
+
+        {% if page.gallery_url %}
+
+          <a
+            class="project-action secondary"
+            href="{{ page.gallery_url }}"
+            target="_blank"
+            rel="noopener">
+
+            View Photos
+
+          </a>
+
+        {% endif %}
+
+      </div>
+
+    {% endif %}
+
+
+
+    <!-- HERO IMAGE -->
+
+    {% if page.hero_image and page.hero_image != "" %}
+
+      <figure class="project-hero-image">
+
+        <img
+          src="{{ page.hero_image | relative_url }}"
+          alt="{{ page.title }}">
+
+        {% if page.hero_caption %}
+
+          <figcaption>
+            {{ page.hero_caption }}
+          </figcaption>
+
+        {% endif %}
+
+      </figure>
+
+    {% endif %}
+
+
+  </header>
+
+
+
+  <!-- =====================================================
+       OVERVIEW
+       ===================================================== -->
+
+  {% if page.overview %}
+
+    <section class="project-overview">
+
+      <div class="project-overview-heading">
+
+        <span>
+          PROJECT OVERVIEW
+        </span>
+
+        <h2>
+          About the Project
+        </h2>
+
+      </div>
+
+
+      <div class="project-overview-copy">
+
+        {{ page.overview | markdownify }}
+
+      </div>
+
+    </section>
+
   {% endif %}
 
-  <div class="project-content">
-    {{ content }}
-  </div>
 
-  <p class="back-link">
-    <a href="{{ '/projects/' | relative_url }}">← Back to Projects</a>
-  </p>
+
+  <!-- =====================================================
+       PROJECT SECTIONS
+       ===================================================== -->
+
+  {% for section in page.sections %}
+
+    <section class="project-story-section">
+
+
+      <!-- SECTION TITLE -->
+
+      <div class="project-story-heading">
+
+        {% if section.date %}
+
+          <div class="project-story-date">
+            {{ section.date }}
+          </div>
+
+        {% endif %}
+
+
+        <h2>
+          {{ section.title }}
+        </h2>
+
+      </div>
+
+
+
+      <!-- MAIN CONTENT -->
+
+      <div class="project-story-content">
+
+
+        {% if section.image and section.image != "" %}
+
+          <figure class="project-story-figure">
+
+            <img
+              src="{{ section.image | relative_url }}"
+              alt="{{ section.title }}">
+
+            {% if section.caption %}
+
+              <figcaption>
+                {{ section.caption }}
+              </figcaption>
+
+            {% endif %}
+
+          </figure>
+
+        {% endif %}
+
+
+
+        <div class="project-story-copy">
+
+          {{ section.body | markdownify }}
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- ADDITIONAL TECHNICAL IMAGES -->
+
+      {% if section.images %}
+
+        <div class="project-figure-grid">
+
+          {% for item in section.images %}
+
+            <figure>
+
+              <img
+                src="{{ item.src | relative_url }}"
+                alt="{{ item.caption | default: section.title }}">
+
+              {% if item.caption %}
+
+                <figcaption>
+                  {{ item.caption }}
+                </figcaption>
+
+              {% endif %}
+
+            </figure>
+
+          {% endfor %}
+
+        </div>
+
+      {% endif %}
+
+
+
+      <!-- OPTIONAL DOWNLOAD -->
+
+      {% if section.download %}
+
+        <div class="project-download">
+
+          <a
+            href="{{ section.download | relative_url }}"
+            target="_blank"
+            rel="noopener">
+
+            <i class="bi bi-file-earmark-arrow-down"></i>
+
+            {{ section.download_label | default: "Download Project Report" }}
+
+          </a>
+
+        </div>
+
+      {% endif %}
+
+
+    </section>
+
+  {% endfor %}
+
+
+
+  <!-- =====================================================
+       PHOTO GALLERY
+       ===================================================== -->
+
+  {% if page.gallery %}
+
+    <section class="project-gallery">
+
+
+      <div class="project-gallery-heading">
+
+        <span>
+          BEHIND THE PROJECT
+        </span>
+
+        <h2>
+          Photos
+        </h2>
+
+      </div>
+
+
+      <div class="project-gallery-grid">
+
+        {% for photo in page.gallery %}
+
+          <figure>
+
+            <img
+              src="{{ photo.src | relative_url }}"
+              alt="{{ photo.caption | default: page.title }}">
+
+            {% if photo.caption %}
+
+              <figcaption>
+                {{ photo.caption }}
+              </figcaption>
+
+            {% endif %}
+
+          </figure>
+
+        {% endfor %}
+
+      </div>
+
+
+    </section>
+
+  {% endif %}
+
+
+
+  <!-- OPTIONAL NORMAL MARKDOWN CONTENT -->
+
+  {% if content != "" %}
+
+    <section class="project-extra-content">
+
+      {{ content }}
+
+    </section>
+
+  {% endif %}
+
 
 </article>
