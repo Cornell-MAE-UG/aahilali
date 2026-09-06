@@ -1,0 +1,110 @@
+---
+layout: project
+
+title: "Cornell Electric Vehicles"
+
+subtitle: "Design, analysis, manufacturing, and development work for Cornell's student electric vehicle project team."
+
+category: "Project Team"
+
+date_range: "ADD YEARS"
+
+role: "ADD ROLE / ROLES"
+
+# Add this once you choose the main project image:
+# image: "/assets/images/cev/cev-card.jpg"
+
+# Main image at the top of the project page:
+# hero_image: "/assets/images/cev/cev-hero.jpg"
+
+# hero_caption: "ADD CAPTION"
+
+# Optional external links:
+# external_url: "ADD LINK"
+# external_label: "Learn More About CEV"
+
+# gallery_url: "ADD PHOTO LINK"
+
+
+overview: >-
+  ADD YOUR OVERALL CORNELL ELECTRIC VEHICLES DESCRIPTION HERE.
+  This should be approximately one or two short paragraphs explaining
+  the team, the vehicle, your role, and the overall engineering work
+  you contributed.
+
+
+sections:
+
+
+  # ========================================================
+  # SECTION 1
+  # ========================================================
+
+  - title: "ADD PROJECT / SUBSYSTEM NAME"
+
+    date: "ADD YEAR"
+
+    # image: "/assets/images/cev/example.jpg"
+
+    # caption: "ADD IMAGE CAPTION"
+
+    body: >-
+      ADD THE PROJECT DESCRIPTION HERE.
+
+      Explain the engineering problem, what you were responsible for,
+      what you designed or analyzed, the constraints you worked with,
+      and what happened as a result.
+
+    # Optional additional technical figures:
+
+    # images:
+    #   - src: "/assets/images/cev/example-analysis-1.jpg"
+    #     caption: "Analysis result"
+
+    #   - src: "/assets/images/cev/example-analysis-2.jpg"
+    #     caption: "Second analysis result"
+
+
+
+  # ========================================================
+  # SECTION 2
+  # ========================================================
+
+  - title: "ADD PROJECT / SUBSYSTEM NAME"
+
+    date: "ADD YEAR"
+
+    body: >-
+      ADD CONTENT HERE.
+
+
+
+  # ========================================================
+  # SECTION 3
+  # ========================================================
+
+  - title: "ADD PROJECT / SUBSYSTEM NAME"
+
+    date: "ADD YEAR"
+
+    body: >-
+      ADD CONTENT HERE.
+
+
+
+# ==========================================================
+# OPTIONAL PHOTO GALLERY
+# ==========================================================
+
+# gallery:
+#
+#   - src: "/assets/images/cev/photo-1.jpg"
+#     caption: "ADD CAPTION"
+#
+#   - src: "/assets/images/cev/photo-2.jpg"
+#     caption: "ADD CAPTION"
+#
+#   - src: "/assets/images/cev/photo-3.jpg"
+#     caption: "ADD CAPTION"
+
+---
