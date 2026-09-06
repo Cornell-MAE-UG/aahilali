@@ -13,7 +13,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : Aahil Ali
 description              : Aahil Ali - Projects and CV 
-baseurl: "/spring-2025-portfolio-aahil24108"
+baseurl: "/aahilali"
 url: "https://cornell-mae-ug.github.io"
 # Theme and Style
 theme: jekyll-theme-minimal
