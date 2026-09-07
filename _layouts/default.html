@@ -3,10 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
     {% if page.title and page.title != "Home" %}
@@ -16,61 +13,43 @@
     {% endif %}
   </title>
 
- <!-- Bootstrap -->
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-  rel="stylesheet">
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
 
-<!-- Bootstrap Icons -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
 
-<link
-  rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin>
+  <!-- Portfolio CSS -->
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/portfolio.css' | relative_url }}?v={{ site.github.build_revision }}">
 
-<link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
-  rel="stylesheet">
-
-<!-- Portfolio CSS -->
-<link
-  rel="stylesheet"
-  href="{{ '/assets/css/portfolio.css' | relative_url }}?v={{ site.github.build_revision }}">
+  <!-- CEV project styling -->
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/cev.css' | relative_url }}?v={{ site.github.build_revision }}">
 </head>
 
-
-<body>
-
-
-  <!-- ============================
-       HEADER
-       ============================ -->
+<body class="{% if page.layout == 'cev' %}cev-body{% endif %}">
 
   <header class="site-header">
-
     <nav class="navbar navbar-expand-lg navbar-dark">
-
       <div class="site-nav-container">
 
-
-        <!-- NAME -->
-
-        <a
-          class="navbar-brand"
-          href="{{ '/' | relative_url }}">
-
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
           {{ site.title }}
-
         </a>
-
-
-        <!-- MOBILE BUTTON -->
 
         <button
           class="navbar-toggler"
@@ -80,136 +59,74 @@
           aria-controls="mainNavigation"
           aria-expanded="false"
           aria-label="Toggle navigation">
-
           <span class="navbar-toggler-icon"></span>
-
         </button>
 
-
-        <!-- NAVIGATION -->
-
-        <div
-          class="collapse navbar-collapse"
-          id="mainNavigation">
-
+        <div class="collapse navbar-collapse" id="mainNavigation">
           <ul class="navbar-nav ms-auto">
 
-
-            <!-- HOME -->
-
             <li class="nav-item">
-
               <a
                 class="nav-link {% if page.url == '/' %}active{% endif %}"
                 href="{{ '/' | relative_url }}">
-
                 Home
-
               </a>
-
             </li>
 
-
-            <!-- PROJECTS -->
-
             <li class="nav-item project-dropdown">
-
               <button
                 class="nav-link project-trigger {% if page.collection == 'projects' %}active{% endif %}"
                 type="button">
-
                 Projects
-
-                <span class="project-caret">
-                  ▾
-                </span>
-
+                <span class="project-caret">▾</span>
               </button>
 
-
               <div class="project-menu">
-
-                {% assign navigation_projects = site.projects | sort: "path" | reverse %}
-
-                {% for project in navigation_projects %}
-
-                  <a
-                    class="project-menu-link"
-                    href="{{ project.url | relative_url }}">
-
+                {% assign featured_navigation_projects = site.projects | where: "featured_home", true %}
+                {% for project in featured_navigation_projects %}
+                  <a class="project-menu-link" href="{{ project.url | relative_url }}">
                     {{ project.title }}
-
                   </a>
-
                 {% endfor %}
 
+                {% assign navigation_projects = site.projects | sort: "path" | reverse %}
+                {% for project in navigation_projects %}
+                  {% unless project.featured_home %}
+                    <a class="project-menu-link" href="{{ project.url | relative_url }}">
+                      {{ project.title }}
+                    </a>
+                  {% endunless %}
+                {% endfor %}
               </div>
-
             </li>
 
-
-            <!-- RESUME -->
-
             <li class="nav-item">
-
               <a
                 class="nav-link {% if page.url == '/cv/' %}active{% endif %}"
                 href="{{ '/cv/' | relative_url }}">
-
                 Resume
-
               </a>
-
             </li>
 
-
           </ul>
-
         </div>
-
       </div>
-
     </nav>
-
   </header>
 
-
-
-  <!-- ============================
-       PAGE
-       ============================ -->
-
   <main class="site-main">
-
     {{ content }}
-
   </main>
 
-
-
-  <!-- ============================
-       FOOTER
-       ============================ -->
-
   <footer class="site-footer">
-
     <div class="footer-inner">
-
       © 2026 {{ site.name }}. All rights reserved.
-
     </div>
-
   </footer>
-
-
-
-  <!-- Bootstrap JS -->
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
   </script>
 
-
 </body>
-
 </html>
