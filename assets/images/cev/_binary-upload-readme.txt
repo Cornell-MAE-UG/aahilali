@@ -1,0 +1,1 @@
+Binary CEV project assets are stored in this folder. This marker can be removed later.
