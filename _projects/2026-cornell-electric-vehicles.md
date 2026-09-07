@@ -44,9 +44,15 @@ image: /assets/images/cev/steering-assembly-overview.jpg
     </div>
 
     <div class="cev-split">
-      <a class="cev-image-link" href="{{ '/assets/images/cev/acceleration-pedal-overview.jpg' | relative_url }}" target="_blank" rel="noopener">
-        <img src="{{ '/assets/images/cev/acceleration-pedal-overview.jpg' | relative_url }}" alt="Cornell Electric Vehicles acceleration pedal CAD overview">
-      </a>
+      <div class="cev-spec-panel" aria-label="Acceleration pedal design summary">
+        <div class="cev-spec-row"><span>CAD</span><strong>Autodesk Inventor</strong></div>
+        <div class="cev-spec-row"><span>Target feedback</span><strong>25 lb</strong></div>
+        <div class="cev-spec-row"><span>Required range</span><strong>20–30 lb</strong></div>
+        <div class="cev-spec-row"><span>Force analysis</span><strong>MATLAB</strong></div>
+        <div class="cev-spec-row"><span>Position sensing</span><strong>Linear potentiometer</strong></div>
+        <div class="cev-spec-row"><span>Interface</span><strong>Steering flat plate</strong></div>
+      </div>
+
       <div class="cev-copy">
         <p>I designed and manufactured a lightweight acceleration pedal and its sensor mounts in Autodesk Inventor. The assembly had to provide 20–30 lb of pedal feedback while packaging cleanly alongside the brake pedal and mounting directly to the steering flat plate.</p>
         <p>I developed a static force model in MATLAB to size the pedal geometry and gas-spring configuration around a target feedback force of approximately 25 lb. The design integrates a linear potentiometer to measure pedal displacement and record position data during vehicle testing.</p>
@@ -97,7 +103,6 @@ image: /assets/images/cev/steering-assembly-overview.jpg
     <p class="cev-kicker">Photos / Engineering Details</p>
     <h2>Click any image to view it full size</h2>
     <div class="cev-gallery-grid">
-      <a href="{{ '/assets/images/cev/acceleration-pedal-overview.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/acceleration-pedal-overview.jpg' | relative_url }}" alt="Acceleration pedal overview"></a>
       <a href="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" alt="Steering assembly overview"></a>
       <a href="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" alt="Steering mounting plate layout"></a>
     </div>
