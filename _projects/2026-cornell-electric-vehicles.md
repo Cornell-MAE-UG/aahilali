@@ -6,6 +6,10 @@ featured_home: true
 image: /assets/images/cev/steering-assembly-overview.jpg
 ---
 
+<style>
+.cev-spec-panel{border-top:1px solid #3a3a3a;border-bottom:1px solid #3a3a3a;padding:8px 0}.cev-spec-row{display:flex;justify-content:space-between;gap:24px;padding:15px 4px;border-bottom:1px solid #1f1f1f;font-family:Inter,Arial,sans-serif}.cev-spec-row:last-child{border-bottom:0}.cev-spec-row span{color:#747474;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}.cev-spec-row strong{color:#e5e5e5;font-weight:500;text-align:right}
+</style>
+
 <div class="cev-page">
 
   <section class="cev-hero">
