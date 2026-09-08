@@ -44,8 +44,8 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
       <div class="cev-wide-figure">
         <h3>Back Mount Gas Spring Shaft</h3>
         <div class="cev-photo-grid">
-          <a href="{{ '/assets/images/cev/back-mount-gas-spring-shaft-load.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/back-mount-gas-spring-shaft-load.png' | relative_url }}" alt="120.1 N load applied to back mount gas spring shaft"></a>
-          <a href="{{ '/assets/images/cev/back-mount-gas-spring-shaft-stress.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/back-mount-gas-spring-shaft-stress.png' | relative_url }}" alt="ANSYS equivalent stress analysis of back mount gas spring shaft"></a>
+          <a href="{{ '/assets/images/cev/gas-spring-shaft-load.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/gas-spring-shaft-load.png' | relative_url }}" alt="120.1 N load applied to back mount gas spring shaft"></a>
+          <a href="{{ '/assets/images/cev/gas-spring-shaft-stress.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/gas-spring-shaft-stress.png' | relative_url }}" alt="ANSYS equivalent stress analysis of back mount gas spring shaft"></a>
         </div>
         <p class="cev-caption">Back mount gas spring shaft loading and equivalent stress results. Maximum stress: 37.04 MPa; 6061-T6 yield strength: 276 MPa; factor of safety: 7.42.</p>
       </div>
