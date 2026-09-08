@@ -41,19 +41,11 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
         </div>
       </div>
 
-      <div class="cev-analysis-summary two-up">
-        <article>
-          <h3>Back Mount / Shaft Holder — ANSYS</h3>
-          <p><strong>Maximum equivalent stress:</strong> 10.203 MPa</p>
-          <p><strong>6061-T6 yield strength:</strong> 276 MPa</p>
-          <p><strong>Factor of safety:</strong> 27.1</p>
-        </article>
-        <article>
-          <h3>Gas Spring Shaft — Hand Calculations & ANSYS</h3>
-          <p><strong>Maximum stress:</strong> 37.04 MPa</p>
-          <p><strong>6061-T6 yield strength:</strong> 276 MPa</p>
-          <p><strong>Factor of safety:</strong> 7.42</p>
-        </article>
+      <div class="cev-wide-figure">
+        <a href="{{ '/assets/images/cev/acceleration-pedal-annotated.png' | relative_url }}" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/cev/acceleration-pedal-annotated.png' | relative_url }}" alt="Annotated acceleration pedal assembly design">
+        </a>
+        <p class="cev-caption">Annotated acceleration pedal assembly design</p>
       </div>
     </div>
   </section>
