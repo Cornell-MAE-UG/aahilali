@@ -99,7 +99,8 @@
 }
 
 .cev-hero-image-wrap {
-  margin-top: 18px;
+  width: min(760px, 100%);
+  margin: 18px auto 0;
 }
 
 .cev-hero-image,
@@ -113,8 +114,8 @@
 }
 
 .cev-hero-image {
-  max-height: 560px;
-  object-fit: cover;
+  max-height: 460px;
+  object-fit: contain;
 }
 
 .cev-section {
