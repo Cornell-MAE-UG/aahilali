@@ -28,8 +28,8 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
 
       <div class="cev-two-col">
         <div class="cev-image-col">
-          <a href="{{ '/assets/images/cev/design-acceleration-pedal.jpg' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/cev/design-acceleration-pedal.jpg' | relative_url }}" alt="Acceleration pedal design overview">
+          <a href="{{ '/assets/images/cev/acceleration-pedal-annotated.png' | relative_url }}" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/cev/acceleration-pedal-annotated.png' | relative_url }}" alt="Acceleration pedal design overview">
           </a>
           <p class="cev-caption">Acceleration pedal design overview</p>
         </div>
@@ -41,11 +41,19 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
         </div>
       </div>
 
-      <div class="cev-wide-figure">
-        <a href="{{ '/assets/images/cev/acceleration-pedal-annotated.png' | relative_url }}" target="_blank" rel="noopener">
-          <img src="{{ '/assets/images/cev/acceleration-pedal-annotated.png' | relative_url }}" alt="Annotated acceleration pedal assembly design">
-        </a>
-        <p class="cev-caption">Annotated acceleration pedal assembly design</p>
+      <div class="cev-analysis-summary two-up">
+        <article>
+          <h3>Back Mount / Shaft Holder — ANSYS</h3>
+          <p><strong>Maximum equivalent stress:</strong> 10.203 MPa</p>
+          <p><strong>6061-T6 yield strength:</strong> 276 MPa</p>
+          <p><strong>Factor of safety:</strong> 27.1</p>
+        </article>
+        <article>
+          <h3>Gas Spring Shaft — Hand Calculations & ANSYS</h3>
+          <p><strong>Maximum stress:</strong> 37.04 MPa</p>
+          <p><strong>6061-T6 yield strength:</strong> 276 MPa</p>
+          <p><strong>Factor of safety:</strong> 7.42</p>
+        </article>
       </div>
     </div>
   </section>
@@ -112,7 +120,7 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
       <p class="cev-section-year">Click any image to view it larger</p>
       <div class="cev-photo-grid">
         <a href="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" target="_blank" rel="noopener"><img src="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" alt="Cornell Electric Vehicles competition car"></a>
-        <a href="{{ '/assets/images/cev/design-acceleration-pedal.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/design-acceleration-pedal.jpg' | relative_url }}" alt="Acceleration pedal design overview"></a>
+        <a href="{{ '/assets/images/cev/acceleration-pedal-annotated.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/acceleration-pedal-annotated.png' | relative_url }}" alt="Acceleration pedal design overview"></a>
         <a href="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" alt="Steering assembly overview"></a>
         <a href="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" alt="Steering flat plate layout"></a>
       </div>
