@@ -3,113 +3,128 @@ layout: cev
 title: "Cornell Electric Vehicles"
 permalink: /projects/cornell-electric-vehicles/
 featured_home: true
-image: /assets/images/cev/steering-assembly-overview.jpg
+image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
 ---
 
-<style>
-.cev-spec-panel{border-top:1px solid #3a3a3a;border-bottom:1px solid #3a3a3a;padding:8px 0}.cev-spec-row{display:flex;justify-content:space-between;gap:24px;padding:15px 4px;border-bottom:1px solid #1f1f1f;font-family:Inter,Arial,sans-serif}.cev-spec-row:last-child{border-bottom:0}.cev-spec-row span{color:#747474;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}.cev-spec-row strong{color:#e5e5e5;font-weight:500;text-align:right}
-</style>
-
 <div class="cev-page">
-
   <section class="cev-hero">
-    <div class="cev-hero-inner">
-      <p class="cev-eyebrow">Cornell Electric Vehicles</p>
-      <h1>Cornell Electric Vehicles</h1>
-      <p class="cev-hero-copy">
-        I collaborate with a multidisciplinary team of more than 75 students to design and build a hyper-efficient autonomous electric vehicle for the Shell Eco-marathon. Our team placed 5th on track at the Shell Eco-marathon Americas competition and earned two off-track awards and $4,500 in prize funding.
-      </p>
+    <div class="cev-shell">
+      <h1 class="cev-page-title">Cornell Electric Vehicles</h1>
+      <p class="cev-page-subtitle">General overview of my work on Cornell Electric Vehicles, with a focus on the acceleration pedal assembly and steering flat plate for the 2026 vehicle.</p>
       <div class="cev-hero-actions">
-        <a class="cev-button cev-button-primary" href="https://www.cevcornell.org/" target="_blank" rel="noopener">Learn More About CEV</a>
-        <a class="cev-button cev-button-secondary" href="#cev-photos">Click here to see photos :)</a>
+        <a class="cev-btn cev-btn-primary" href="https://www.cornellelectricvehicles.org/" target="_blank" rel="noopener">Learn More About CEV</a>
+        <a class="cev-btn cev-btn-secondary" href="#cev-photos">Click here to see photos :)</a>
+      </div>
+      <div class="cev-hero-image-wrap">
+        <img class="cev-hero-image" src="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" alt="Cornell Electric Vehicles competition car">
       </div>
     </div>
   </section>
 
-  <section class="cev-intro cev-section">
-    <div class="cev-section-number">01</div>
-    <div class="cev-intro-grid">
-      <div>
-        <p class="cev-kicker">Project Team</p>
-        <h2>Designing a hyper-efficient autonomous EV</h2>
+  <section class="cev-section">
+    <div class="cev-shell">
+      <h2 class="cev-section-title">Acceleration Pedal</h2>
+      <p class="cev-section-year">2025 - 2026</p>
+
+      <div class="cev-two-col cev-text-first">
+        <div class="cev-text-col">
+          <p>I designed and manufactured a lightweight acceleration pedal and sensor mounts in Autodesk Inventor. The assembly was designed to package cleanly alongside the brake pedal and mount directly to the steering flat plate while remaining lightweight, stiff, and manufacturable.</p>
+          <p>I developed a static force model in MATLAB to size the pedal geometry and gas-spring configuration around a target feedback force of approximately 25 lb. The design integrates a linear potentiometer to measure pedal displacement and record position data during vehicle testing.</p>
+          <p>I also evaluated critical hardware in ANSYS, including the back mount / shaft holder and gas spring shaft, to verify that stresses remained well below the yield strength of 6061-T6 aluminum.</p>
+        </div>
+
+        <div class="cev-spec-panel">
+          <div><span>CAD</span><strong>Autodesk Inventor</strong></div>
+          <div><span>Target feedback</span><strong>25 lb</strong></div>
+          <div><span>Required range</span><strong>20–30 lb</strong></div>
+          <div><span>Force analysis</span><strong>MATLAB</strong></div>
+          <div><span>Position sensing</span><strong>Linear potentiometer</strong></div>
+          <div><span>Mount interface</span><strong>Steering flat plate</strong></div>
+        </div>
       </div>
-      <div class="cev-copy">
-        <p>My work on Cornell Electric Vehicles has focused on driver controls, steering layout, mechanical integration, and lightweight hardware for our competition vehicle. I have contributed both detailed component design and system-level layout work, balancing packaging, structural stability, manufacturability, sensing, and vehicle mass.</p>
-        <p>Two of my primary projects are the acceleration pedal assembly and the steering-system mounting architecture for the 2026 vehicle.</p>
+
+      <div class="cev-analysis-summary two-up">
+        <article>
+          <h3>Back Mount / Shaft Holder — ANSYS</h3>
+          <p><strong>Maximum equivalent stress:</strong> 10.203 MPa</p>
+          <p><strong>6061-T6 yield strength:</strong> 276 MPa</p>
+          <p><strong>Factor of safety:</strong> 27.1</p>
+        </article>
+        <article>
+          <h3>Gas Spring Shaft — Hand Calculations & ANSYS</h3>
+          <p><strong>Maximum stress:</strong> 37.04 MPa</p>
+          <p><strong>6061-T6 yield strength:</strong> 276 MPa</p>
+          <p><strong>Factor of safety:</strong> 7.42</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="cev-section cev-project-section">
-    <div class="cev-section-number">02</div>
-    <div class="cev-project-heading">
-      <p class="cev-kicker">2025–2026</p>
-      <h2>Acceleration Pedal</h2>
-    </div>
+  <section class="cev-section">
+    <div class="cev-shell">
+      <h2 class="cev-section-title">Steering System Layout & Flat Plate</h2>
+      <p class="cev-section-year">2025 - 2026</p>
 
-    <div class="cev-split">
-      <div class="cev-spec-panel" aria-label="Acceleration pedal design summary">
-        <div class="cev-spec-row"><span>CAD</span><strong>Autodesk Inventor</strong></div>
-        <div class="cev-spec-row"><span>Target feedback</span><strong>25 lb</strong></div>
-        <div class="cev-spec-row"><span>Required range</span><strong>20–30 lb</strong></div>
-        <div class="cev-spec-row"><span>Force analysis</span><strong>MATLAB</strong></div>
-        <div class="cev-spec-row"><span>Position sensing</span><strong>Linear potentiometer</strong></div>
-        <div class="cev-spec-row"><span>Interface</span><strong>Steering flat plate</strong></div>
+      <div class="cev-two-col">
+        <div class="cev-image-col">
+          <a href="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" alt="Steering assembly overview">
+          </a>
+          <p class="cev-caption">Steering assembly overview</p>
+        </div>
+        <div class="cev-text-col">
+          <p>I led the steering system layout for the 2026 vehicle and defined the packaging relationship between the rack and pinion, driver controls, pedal box, and autonomy hardware.</p>
+          <p>I designed a threaded aluminum mounting plate that creates a common mechanical interface for the rack and pinion, pedals, autobrake, autosteer, and related hardware. The design was developed for maximum stability and minimal weight while simplifying integration and maintaining component alignment.</p>
+          <p>I also performed structural analysis on the plate to evaluate applied loads, deformation, elastic strain, and equivalent stress before finalizing the mounting architecture.</p>
+        </div>
       </div>
 
-      <div class="cev-copy">
-        <p>I designed and manufactured a lightweight acceleration pedal and its sensor mounts in Autodesk Inventor. The assembly had to provide 20–30 lb of pedal feedback while packaging cleanly alongside the brake pedal and mounting directly to the steering flat plate.</p>
-        <p>I developed a static force model in MATLAB to size the pedal geometry and gas-spring configuration around a target feedback force of approximately 25 lb. The design integrates a linear potentiometer to measure pedal displacement and record position data during vehicle testing.</p>
-        <p>The final architecture combines the foot pad, gas spring, displacement sensor, shaft supports, spacers, and mounting hardware into a compact assembly intended to minimize mass while maintaining stiffness and repeatable pedal feel.</p>
+      <div class="cev-wide-figure">
+        <a href="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" alt="Steering flat plate layout">
+        </a>
+        <p class="cev-caption">Steering flat plate layout showing the interface for pedals, rack-and-pinion hardware, and autonomy components.</p>
       </div>
-    </div>
-  </section>
 
-  <section class="cev-section cev-project-section">
-    <div class="cev-section-number">03</div>
-    <div class="cev-project-heading">
-      <p class="cev-kicker">2026 Vehicle</p>
-      <h2>Steering System Layout & Mounting Plate</h2>
-    </div>
-
-    <div class="cev-split cev-split-reverse">
-      <a class="cev-image-link" href="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" target="_blank" rel="noopener">
-        <img src="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" alt="Steering assembly overview for Cornell Electric Vehicles">
-      </a>
-      <div class="cev-copy">
-        <p>I led the steering-system layout for the 2026 vehicle and defined the packaging relationship between the rack and pinion, driver controls, pedal box, and autonomy hardware. The goal was to create a stable, lightweight, and serviceable front-end architecture while reducing unnecessary chassis interfaces.</p>
-        <p>I also designed a threaded aluminum steering mounting plate that establishes a common mechanical interface for the rack and pinion, pedals, autobrake, autosteer, and related hardware. The plate is intended to simplify assembly, maintain alignment, and carry loads generated by steering input and pedal operation while minimizing weight.</p>
+      <div class="cev-analysis-summary three-up">
+        <article>
+          <h3>Applied Loads</h3>
+          <p>Load cases represented forces introduced through the steering, pedal, and autonomy mounting interfaces.</p>
+        </article>
+        <article>
+          <h3>Deformation</h3>
+          <p>Directional and total deformation studies were used to verify that the plate remained stiff under the expected operating loads.</p>
+        </article>
+        <article>
+          <h3>Equivalent Stress</h3>
+          <p><strong>Maximum equivalent stress:</strong> approximately 12.105 MPa</p>
+          <p><strong>Estimated factor of safety:</strong> approximately 23</p>
+        </article>
       </div>
-    </div>
-
-    <div class="cev-wide-figure">
-      <a class="cev-image-link" href="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" target="_blank" rel="noopener">
-        <img src="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" alt="Steering mounting plate layout">
-      </a>
-      <p class="cev-caption">Steering mounting plate layout showing the aluminum interface plate used to locate pedals, rack-and-pinion hardware, and autonomy components.</p>
     </div>
   </section>
 
   <section class="cev-section cev-results">
-    <div class="cev-section-number">04</div>
-    <p class="cev-kicker">Team Results</p>
-    <h2>Competition impact</h2>
-    <div class="cev-stat-grid">
-      <div class="cev-stat"><strong>75+</strong><span>students collaborating across the team</span></div>
-      <div class="cev-stat"><strong>5th</strong><span>on-track finish at Shell Eco-marathon Americas</span></div>
-      <div class="cev-stat"><strong>2</strong><span>off-track awards</span></div>
-      <div class="cev-stat"><strong>$4,500</strong><span>competition prize funding</span></div>
+    <div class="cev-shell">
+      <h2 class="cev-section-title">Competition Results</h2>
+      <div class="cev-stat-grid">
+        <div class="cev-stat"><strong>75+</strong><span>students collaborating across the team</span></div>
+        <div class="cev-stat"><strong>5th</strong><span>on-track finish at Shell Eco-marathon Americas</span></div>
+        <div class="cev-stat"><strong>2</strong><span>off-track awards</span></div>
+        <div class="cev-stat"><strong>$4,500</strong><span>competition prize funding</span></div>
+      </div>
     </div>
   </section>
 
   <section class="cev-section cev-gallery" id="cev-photos">
-    <div class="cev-section-number">05</div>
-    <p class="cev-kicker">Photos / Engineering Details</p>
-    <h2>Click any image to view it full size</h2>
-    <div class="cev-gallery-grid">
-      <a href="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" alt="Steering assembly overview"></a>
-      <a href="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" alt="Steering mounting plate layout"></a>
+    <div class="cev-shell">
+      <h2 class="cev-section-title">Photos / Fun</h2>
+      <p class="cev-section-year">Click any image to view it larger</p>
+      <div class="cev-photo-grid">
+        <a href="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" target="_blank" rel="noopener"><img src="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" alt="Cornell Electric Vehicles competition car"></a>
+        <a href="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" alt="Steering assembly overview"></a>
+        <a href="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" alt="Steering flat plate layout"></a>
+      </div>
     </div>
   </section>
-
 </div>
