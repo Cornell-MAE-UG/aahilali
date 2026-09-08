@@ -28,8 +28,8 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
 
       <div class="cev-two-col">
         <div class="cev-image-col">
-          <a href="{{ '/assets/images/cev/design-acceleration-pedal.svg' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/cev/design-acceleration-pedal.svg' | relative_url }}" alt="Acceleration pedal design overview">
+          <a href="{{ '/assets/images/cev/acceleration-pedal-cad.jpg' | relative_url }}" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/cev/acceleration-pedal-cad.jpg' | relative_url }}" alt="Acceleration pedal design overview">
           </a>
           <p class="cev-caption">Acceleration pedal design overview</p>
         </div>
@@ -120,7 +120,7 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
       <p class="cev-section-year">Click any image to view it larger</p>
       <div class="cev-photo-grid">
         <a href="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" target="_blank" rel="noopener"><img src="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" alt="Cornell Electric Vehicles competition car"></a>
-        <a href="{{ '/assets/images/cev/design-acceleration-pedal.svg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/design-acceleration-pedal.svg' | relative_url }}" alt="Acceleration pedal design overview"></a>
+        <a href="{{ '/assets/images/cev/acceleration-pedal-cad.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/acceleration-pedal-cad.jpg' | relative_url }}" alt="Acceleration pedal design overview"></a>
         <a href="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" alt="Steering assembly overview"></a>
         <a href="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" alt="Steering flat plate layout"></a>
       </div>
