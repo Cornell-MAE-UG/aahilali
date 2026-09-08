@@ -26,20 +26,18 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
       <h2 class="cev-section-title">Acceleration Pedal</h2>
       <p class="cev-section-year">2025 - 2026</p>
 
-      <div class="cev-two-col cev-text-first">
+      <div class="cev-two-col">
+        <div class="cev-image-col">
+          <a href="{{ '/assets/images/cev/design-acceleration-pedal.svg' | relative_url }}" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/cev/design-acceleration-pedal.svg' | relative_url }}" alt="Acceleration pedal design overview">
+          </a>
+          <p class="cev-caption">Acceleration pedal design overview</p>
+        </div>
+
         <div class="cev-text-col">
           <p>I designed and manufactured a lightweight acceleration pedal and sensor mounts in Autodesk Inventor. The assembly was designed to package cleanly alongside the brake pedal and mount directly to the steering flat plate while remaining lightweight, stiff, and manufacturable.</p>
           <p>I developed a static force model in MATLAB to size the pedal geometry and gas-spring configuration around a target feedback force of approximately 25 lb. The design integrates a linear potentiometer to measure pedal displacement and record position data during vehicle testing.</p>
           <p>I also evaluated critical hardware in ANSYS, including the back mount / shaft holder and gas spring shaft, to verify that stresses remained well below the yield strength of 6061-T6 aluminum.</p>
-        </div>
-
-        <div class="cev-spec-panel">
-          <div><span>CAD</span><strong>Autodesk Inventor</strong></div>
-          <div><span>Target feedback</span><strong>25 lb</strong></div>
-          <div><span>Required range</span><strong>20–30 lb</strong></div>
-          <div><span>Force analysis</span><strong>MATLAB</strong></div>
-          <div><span>Position sensing</span><strong>Linear potentiometer</strong></div>
-          <div><span>Mount interface</span><strong>Steering flat plate</strong></div>
         </div>
       </div>
 
@@ -122,6 +120,7 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
       <p class="cev-section-year">Click any image to view it larger</p>
       <div class="cev-photo-grid">
         <a href="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" target="_blank" rel="noopener"><img src="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" alt="Cornell Electric Vehicles competition car"></a>
+        <a href="{{ '/assets/images/cev/design-acceleration-pedal.svg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/design-acceleration-pedal.svg' | relative_url }}" alt="Acceleration pedal design overview"></a>
         <a href="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" alt="Steering assembly overview"></a>
         <a href="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-mounting-plate-layout.jpg' | relative_url }}" alt="Steering flat plate layout"></a>
       </div>
