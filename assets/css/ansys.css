@@ -129,6 +129,106 @@
   font-weight: 600;
 }
 
+.ansys-calcs {
+  margin: 34px 0 18px;
+  padding: 28px;
+  border: 1px solid #252c39;
+  background: linear-gradient(145deg, #10141c, #0c1017);
+}
+
+.ansys-calcs-header {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.4fr);
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.ansys-calcs-header h3 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  line-height: 1.08;
+}
+
+.ansys-calcs-header > p {
+  margin: 0;
+  color: #9ca4b3;
+  line-height: 1.7;
+}
+
+.ansys-calc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ansys-calc-card {
+  padding: 20px;
+  border: 1px solid #2a313f;
+  background: #0b0f15;
+}
+
+.ansys-calc-number {
+  display: block;
+  margin-bottom: 20px;
+  color: #ff9c32;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.ansys-calc-card h4 {
+  margin: 0 0 13px;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.ansys-equation {
+  margin-bottom: 14px;
+  padding: 11px 12px;
+  border-left: 2px solid #ff9c32;
+  background: #111722;
+  color: #f0f2f5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.ansys-calc-card p {
+  margin: 0 0 14px;
+  color: #8f97a7;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.ansys-calc-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 9px 0;
+  border-top: 1px solid #202632;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.82rem;
+}
+
+.ansys-calc-values span {
+  color: #7f8796;
+}
+
+.ansys-calc-values strong {
+  color: #eef1f5;
+  text-align: right;
+  font-weight: 600;
+}
+
+.ansys-calc-note {
+  margin: 12px 0 0 !important;
+  color: #9da5b4 !important;
+}
+
 .ansys-feature-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -275,13 +375,15 @@
 }
 
 @media (max-width: 1040px) {
-  .ansys-project-intro {
+  .ansys-project-intro,
+  .ansys-calcs-header {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
   .ansys-stats,
-  .ansys-gallery {
+  .ansys-gallery,
+  .ansys-calc-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -302,7 +404,12 @@
   }
 
   .ansys-stats,
-  .ansys-gallery {
+  .ansys-gallery,
+  .ansys-calc-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ansys-calcs {
+    padding: 20px 16px;
   }
 }
