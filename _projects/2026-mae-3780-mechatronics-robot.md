@@ -1,45 +1,71 @@
 ---
-layout: project
-title: "MAE 3780 Mechatronics Robot Project"
-excerpt: "A team-based mechatronics project focused on designing, building, coding, and testing an autonomous cube-collecting robot."
-permalink: /projects/mechatronics-robot/
+layout: mechatronics
+title: "Mechatronics"
+excerpt: "Autonomous cube-collecting robot integrating mechanical design, sensing, control, wiring, and testing."
+permalink: /projects/mechatronics/
 image: /assets/images/mechatronics-robot.jpg
 ---
 
-# MAE 3780 Mechatronics Robot Project
+<div class="mech-page">
+  <section class="mech-hero">
+    <div class="mech-shell">
+      <p class="mech-kicker">MAE 3780 · Mechatronics</p>
+      <h1 class="mech-title">Mechatronics</h1>
+      <p class="mech-subtitle">A team-based autonomous robotics project combining mechanical design, sensing, control logic, wiring, testing, and iterative prototyping for a one-minute cube-collecting competition.</p>
 
-## Project Overview
+      <div class="mech-actions">
+        <a class="mech-btn mech-btn-primary" href="{{ '/assets/MAE 3780 Final Report.pdf' | relative_url }}" target="_blank" rel="noopener">View Technical Report</a>
+      </div>
+    </div>
+  </section>
 
-For my MAE 3780 Mechatronics final project, my team designed and built an autonomous robot for a one-minute cube-collecting competition. The goal of the competition was to gather as many cubes as possible within the robot’s perimeter before time ran out.
+  <section>
+    <div class="mech-shell mech-main-grid">
+      <div class="mech-copy">
+        <p class="mech-section-label">Project Overview</p>
+        <h2 class="mech-heading">Autonomous Cube-Collecting Robot</h2>
+        <p>For the MAE 3780 final project, my team designed and built an autonomous robot for a one-minute cube-collecting competition. The objective was to gather as many cubes as possible within the robot’s perimeter before time expired.</p>
+        <p>We intentionally pursued a simple, lightweight, and reliable collection strategy. Cardboard walls enclosed the rear and sides of the chassis, while a V-shaped front guide funneled cubes toward side openings so they could enter and remain inside the robot’s perimeter without requiring a complicated active intake mechanism.</p>
+        <p>The robot used a color sensor to identify the black boundary of the playing field. When the boundary was detected, the robot stopped, reversed, turned away from the edge, and resumed driving. Because we did not use dedicated cube-detection sensors, our control strategy emphasized reliable field coverage and boundary avoidance.</p>
 
-Our robot was designed to be simple, lightweight, and reliable. Since cubes counted as long as they were completely inside the robot’s boundary, we focused on creating a structure that could guide cubes into the robot and keep them contained. The robot used cardboard walls around the back and sides of the chassis, along with a V-shaped cardboard piece at the front to funnel cubes toward the side openings. Once cubes entered those spaces, the surrounding walls helped keep them inside the robot’s perimeter.
+        <p class="mech-section-label">My Contribution</p>
+        <p>I contributed to the mechanical design, chassis construction, wiring, testing, troubleshooting, and code verification. I helped develop the final structure, mount components, validate wiring, and iterate on the robot’s behavior through repeated testing.</p>
+        <p>I also helped evaluate different cardboard geometries, wall heights, and attachment methods. A major design challenge was keeping cubes securely inside the robot while it accelerated, turned, and changed direction. The project reinforced the importance of designing around reliability rather than adding complexity for its own sake.</p>
 
-For sensing and control, we used a color sensor to detect the black border of the playing field. When the robot detected the black boundary, it stopped, backed up, turned away from the edge, and continued driving. Since we did not use sensors to detect cubes directly, our strategy was based on covering different areas of the board and changing direction when the robot reached the border.
+        <p class="mech-section-label">Design Iteration</p>
+        <p>Early concepts included more complicated intake approaches such as sweeping and rotating mechanisms. After testing and discussion, our team simplified the design and focused on passive geometry that could guide cubes into the robot with fewer moving parts and fewer potential failure points.</p>
+        <p>We also learned where the prototype could be improved. More rigid structural parts, stronger component mounts, and a better-secured color sensor would have increased repeatability and competition reliability.</p>
+      </div>
 
-## My Contribution
+      <figure class="mech-hero-card">
+        <a href="{{ '/assets/images/mechatronics-robot.jpg' | relative_url }}" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/mechatronics-robot.jpg' | relative_url }}" alt="MAE 3780 autonomous mechatronics robot">
+        </a>
+        <figcaption>Autonomous cube-collecting robot developed for the MAE 3780 final competition.</figcaption>
+      </figure>
+    </div>
+  </section>
 
-I contributed to the mechanical design, construction, wiring, testing, and troubleshooting of the robot. I helped significantly with constructing the final chassis and mounting the necessary components. I also helped make sure the wiring was correct and that the robot’s code worked properly for the competition.
+  <section class="mech-gallery-section">
+    <div class="mech-shell">
+      <div class="mech-gallery-header">
+        <div>
+          <p class="mech-section-label">Project Gallery</p>
+          <h2 class="mech-heading">Design, Build, Code, Test</h2>
+        </div>
+        <p>This gallery is set up for the final robot, mechanical details, electronics and wiring, sensor setup, testing, code screenshots, and competition photos.</p>
+      </div>
 
-During the project, I helped test different cardboard wall shapes, attachment methods, and design ideas. A major part of our design process was figuring out how to keep cubes inside the robot’s perimeter while the robot moved and turned. I also contributed to the final report by helping explain the robot’s design, competition strategy, performance, and areas for improvement.
+      <div class="mech-gallery">
+        <figure class="mech-tile">
+          <a href="{{ '/assets/images/mechatronics-robot.jpg' | relative_url }}" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/mechatronics-robot.jpg' | relative_url }}" alt="Completed autonomous mechatronics robot">
+          </a>
+          <figcaption>Completed autonomous robot</figcaption>
+        </figure>
+      </div>
 
-## Design Process
-
-At the beginning of the project, our team considered more complicated intake ideas, including a sweeping arm and a rotating mechanism. After testing and discussing the design with the TAs, we decided that a simpler cube-collection system would be more reliable. Instead of using extra moving parts, we focused on driving into cubes and guiding them into the robot’s perimeter.
-
-We tested several cardboard shapes, wall heights, and attachment methods. We eventually found that taller cardboard walls and a simple V-shaped front helped guide cubes into the robot while keeping the structure stable. We also used larger wheels and adjusted the robot’s design so it could move more effectively during the competition.
-
-## Competition Performance
-
-Our robot performed well during testing, but we ran into reliability issues during the actual competition. The robot was able to collect cubes and had a simple strategy that worked in testing, but some parts of the chassis and sensor mount were not as secure as they needed to be. Because we relied heavily on tape and cardboard, the robot became less reliable under competition conditions.
-
-One thing we would change is how we used our budget. We could have used more of it to 3D print parts of the chassis or create a more secure mount for the color sensor. This would have made the robot stronger and more consistent during the final competition.
-
-## What I Learned
-
-This project taught me that a simple design is often better than a complicated one, especially when reliability matters. I learned how important it is to test early, make the chassis sturdy, secure sensors properly, and avoid adding unnecessary mechanisms that can make the robot harder to control.
-
-I also learned that competition strategy matters just as much as the physical design. If we could do the project again, we might focus more on speed and driving quickly toward the center of the board at the start of the match. Overall, this project helped me better understand how mechanical design, electronics, coding, testing, and teamwork all come together in a real mechatronics system.
-
-## Final Report
-
-[View Final Report PDF]({{ '/assets/MAE 3780 Final Report.pdf' | relative_url }})
+      <div class="mech-note">The page layout is ready for additional project images and code. Add the final gallery images under <strong>assets/images/mechatronics/</strong> and the source code under <strong>assets/code/mechatronics/</strong>; I can wire them into this layout as you upload them.</div>
+    </div>
+  </section>
+</div>
