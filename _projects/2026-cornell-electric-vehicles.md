@@ -22,12 +22,12 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
   <section class="cev-collage-section" id="cev-collage">
     <div class="cev-shell cev-gallery-layout">
       <aside class="cev-gallery-copy">
-        <p class="cev-eyebrow">2025 — 2026</p>
+        <p class="cev-eyebrow">Oct. 2023 — Present</p>
         <h2 class="cev-section-title">Project Gallery</h2>
-        <p>I designed and manufactured a lightweight acceleration pedal and sensor mounts in Autodesk Inventor. The assembly was designed to package cleanly alongside the brake pedal and mount directly to the steering flat plate while remaining lightweight, stiff, and manufacturable.</p>
-        <p>I developed a static force model in MATLAB to size the pedal geometry and gas-spring configuration around a target feedback force of approximately 25 lb. The design integrates a linear potentiometer to measure pedal displacement and record position data during vehicle testing.</p>
-        <p>I also evaluated critical hardware in ANSYS, including the back mount / shaft holder and gas spring shaft, to verify that stresses remained well below the yield strength of 6061-T6 aluminum.</p>
-        <p>I led the steering-system layout for the 2026 vehicle and defined the packaging relationship between the rack and pinion, driver controls, pedal box, and autonomy hardware. I designed the aluminum mounting plate that creates a shared mechanical interface for the rack and pinion, pedals, autobrake, autosteer, and related hardware.</p>
+        <p>As a member of Cornell Electric Vehicles' Steering Subteam, I work within a multidisciplinary team of 75+ students designing and building a hyper-efficient electric vehicle for the Shell Eco-marathon. My work spans mechanical design, analysis, manufacturing, and subsystem integration.</p>
+        <p>I designed and manufactured a lightweight acceleration pedal and sensor mounts in Autodesk Inventor, developing the assembly around packaging, stiffness, manufacturability, and driver feedback requirements. I built a static force model in MATLAB to size the pedal geometry and gas-spring configuration for approximately 25 lb of feedback force, and integrated a linear potentiometer to record pedal-position data during testing.</p>
+        <p>I verified critical pedal hardware in ANSYS, including the back mount / shaft holder and gas spring shaft, to confirm stresses remained well below the yield strength of 6061-T6 aluminum.</p>
+        <p>I also led the steering-system layout for the 2026 vehicle, defining the packaging relationship between the rack and pinion, pedal box, steering linkage, autobrake, autosteer, and other hardware. I designed a threaded aluminum mounting plate that provides a shared mechanical interface while prioritizing stability and low mass, and I have machined 50+ custom components using CNC equipment, a manual mill, and a lathe to support vehicle assembly.</p>
       </aside>
 
       <div class="cev-collage">
