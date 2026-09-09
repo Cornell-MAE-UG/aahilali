@@ -36,24 +36,69 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
           <figcaption>Acceleration pedal design and packaging</figcaption>
         </figure>
 
-        <figure class="cev-tile">
-          <a href="{{ '/assets/images/cev/back-mount-shaft-holder-ansys.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/back-mount-shaft-holder-ansys.png' | relative_url }}" alt="ANSYS equivalent stress analysis of the acceleration pedal back mount and shaft holder"></a>
-          <figcaption>Back mount / shaft holder — ANSYS equivalent stress</figcaption>
+        <figure class="cev-tile cev-tile-wide">
+          <a href="{{ '/assets/images/cev/steering-layout-subsystems.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-layout-subsystems.png' | relative_url }}" alt="Steering system physical layout and subsystem packaging"></a>
+          <figcaption>Steering-system subsystem packaging and physical layout</figcaption>
+        </figure>
+
+        <figure class="cev-tile cev-tile-wide">
+          <a href="{{ '/assets/images/cev/steering-layout-cad-comparison.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-layout-cad-comparison.png' | relative_url }}" alt="Steering system physical and CAD layout comparison"></a>
+          <figcaption>Physical steering layout compared with the CAD assembly</figcaption>
+        </figure>
+
+        <figure class="cev-tile cev-tile-portrait">
+          <a href="{{ '/assets/images/cev/steering-linkage-clearance.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-linkage-clearance.png' | relative_url }}" alt="Steering linkage clearance detail"></a>
+          <figcaption>Steering linkage packaging and clearance detail</figcaption>
         </figure>
 
         <figure class="cev-tile">
-          <a href="{{ '/assets/images/cev/gas-spring-shaft-load.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/gas-spring-shaft-load.png' | relative_url }}" alt="120.1 N load applied to the gas spring shaft"></a>
-          <figcaption>Gas spring shaft — applied load</figcaption>
+          <a href="{{ '/assets/images/cev/acceleration-pedal-matlab-analysis.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/acceleration-pedal-matlab-analysis.png' | relative_url }}" alt="MATLAB acceleration pedal analysis"></a>
+          <figcaption>MATLAB pedal geometry and gas-spring force analysis</figcaption>
         </figure>
 
         <figure class="cev-tile">
-          <a href="{{ '/assets/images/cev/gas-spring-shaft-stress.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/gas-spring-shaft-stress.png' | relative_url }}" alt="ANSYS equivalent stress analysis of the gas spring shaft"></a>
-          <figcaption>Gas spring shaft — ANSYS equivalent stress</figcaption>
+          <a href="{{ '/assets/images/cev/pedal-back-mount-stress.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/pedal-back-mount-stress.png' | relative_url }}" alt="ANSYS equivalent stress of pedal back mount"></a>
+          <figcaption>Pedal back mount / shaft holder — equivalent stress</figcaption>
         </figure>
 
-        <figure class="cev-tile cev-tile-feature">
-          <a href="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-assembly-overview.jpg' | relative_url }}" alt="Steering assembly overview"></a>
-          <figcaption>Steering-system integration</figcaption>
+        <figure class="cev-tile">
+          <a href="{{ '/assets/images/cev/gas-spring-shaft-load.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/gas-spring-shaft-load.png' | relative_url }}" alt="Gas spring shaft applied load"></a>
+          <figcaption>Gas spring shaft — applied 120.1 N load</figcaption>
+        </figure>
+
+        <figure class="cev-tile">
+          <a href="{{ '/assets/images/cev/gas-spring-shaft-stress.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/gas-spring-shaft-stress.png' | relative_url }}" alt="Gas spring shaft equivalent stress"></a>
+          <figcaption>Gas spring shaft — equivalent stress</figcaption>
+        </figure>
+
+        <figure class="cev-tile cev-tile-portrait">
+          <a href="{{ '/assets/images/cev/steering-linkage-stress.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-linkage-stress.png' | relative_url }}" alt="Steering linkage equivalent stress"></a>
+          <figcaption>Steering linkage — equivalent stress</figcaption>
+        </figure>
+
+        <figure class="cev-tile">
+          <a href="{{ '/assets/images/cev/steering-plate-chassis-integration.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-plate-chassis-integration.png' | relative_url }}" alt="Steering mounting plate integrated in chassis"></a>
+          <figcaption>Steering mounting plate integrated within the chassis</figcaption>
+        </figure>
+
+        <figure class="cev-tile cev-tile-wide">
+          <a href="{{ '/assets/images/cev/steering-mounting-plate-design.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-mounting-plate-design.png' | relative_url }}" alt="Steering mounting plate design"></a>
+          <figcaption>Steering mounting plate design and mounting pattern</figcaption>
+        </figure>
+
+        <figure class="cev-tile cev-tile-wide">
+          <a href="{{ '/assets/images/cev/steering-plate-loads.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-plate-loads.png' | relative_url }}" alt="Steering mounting plate ANSYS loads"></a>
+          <figcaption>Steering mounting plate — applied loads and boundary conditions</figcaption>
+        </figure>
+
+        <figure class="cev-tile cev-tile-wide">
+          <a href="{{ '/assets/images/cev/steering-plate-directional-deformation.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-plate-directional-deformation.png' | relative_url }}" alt="Steering mounting plate directional deformation"></a>
+          <figcaption>Steering mounting plate — directional deformation</figcaption>
+        </figure>
+
+        <figure class="cev-tile cev-tile-wide">
+          <a href="{{ '/assets/images/cev/steering-plate-total-deformation.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/cev/steering-plate-total-deformation.png' | relative_url }}" alt="Steering mounting plate total deformation"></a>
+          <figcaption>Steering mounting plate — total deformation</figcaption>
         </figure>
       </div>
     </div>
