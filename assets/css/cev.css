@@ -179,7 +179,8 @@
 .cev-tile a,
 .cev-tile-feature a,
 .cev-tile-wide a,
-.cev-tile-portrait a {
+.cev-tile-portrait a,
+.cev-tile-code a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +195,8 @@
 .cev-tile img,
 .cev-tile-feature img,
 .cev-tile-wide img,
-.cev-tile-portrait img {
+.cev-tile-portrait img,
+.cev-tile-code img {
   display: block;
   width: 100%;
   height: 100%;
@@ -202,30 +204,6 @@
   object-fit: contain;
   background: #0f0f0f;
   transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.cev-tile-code {
-  grid-column: span 2;
-}
-
-.cev-tile-code a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  aspect-ratio: 16 / 5;
-  background: #0f0f0f;
-  overflow: hidden;
-  padding: 4px;
-  box-sizing: border-box;
-}
-
-.cev-tile-code img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background: #0f0f0f;
 }
 
 .cev-tile:hover img,
@@ -259,10 +237,6 @@
   .cev-collage {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .cev-tile-code {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (max-width: 980px) {
@@ -292,10 +266,6 @@
   .cev-tile-portrait a,
   .cev-tile-code a {
     aspect-ratio: 4 / 3;
-  }
-
-  .cev-tile-code {
-    grid-column: auto;
   }
 }
 
