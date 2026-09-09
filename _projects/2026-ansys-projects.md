@@ -1,66 +1,87 @@
 ---
 layout: ansys
-title: "ANSYS"
-excerpt: "Finite element analysis projects focused on structural behavior, loading, deformation, stress, and design validation."
+title: "ANSYS / CFD Projects"
+excerpt: "Computational fluid dynamics projects using ANSYS Fluent, mesh refinement, analytical validation, and engineering interpretation."
 permalink: /projects/ansys/
 ---
 
 <div class="ansys-page">
   <section class="ansys-hero">
     <div class="ansys-shell">
-      <p class="ansys-kicker">Finite Element Analysis · Structural Simulation</p>
-      <h1 class="ansys-title">ANSYS</h1>
-      <p class="ansys-subtitle">A collection of finite element analysis projects focused on translating real engineering problems into simulation models, defining realistic loading and constraints, interpreting stress and deformation results, and using those results to support design decisions.</p>
+      <p class="ansys-kicker">ANSYS Fluent · Computational Fluid Dynamics</p>
+      <h1 class="ansys-title">ANSYS / CFD Projects</h1>
+      <p class="ansys-subtitle">A collection of computational fluid dynamics projects focused on model setup, mesh quality, flow visualization, grid convergence, analytical validation, and interpretation of simulation results.</p>
     </div>
   </section>
 
-  <section>
-    <div class="ansys-shell ansys-overview">
-      <div>
-        <p class="ansys-label">Overview</p>
-        <h2>From Model Setup to Design Validation</h2>
-      </div>
-
-      <div class="ansys-copy">
-        <p>This page brings together my ANSYS work across structural-analysis projects. Each study is presented around the engineering question being evaluated, the assumptions used to represent the physical system, the applied loads and boundary conditions, and the results that informed the final design.</p>
-        <p>I use finite element analysis as a design tool rather than only as a visualization step. The goal is to understand where a component is most highly loaded, how it deforms under realistic conditions, whether the model behaves as expected, and what changes can improve strength, stiffness, or efficiency.</p>
-
-        <div class="ansys-process">
-          <div class="ansys-step"><span>01</span><h3>Model</h3><p>Prepare geometry and identify the critical features that need to be represented.</p></div>
-          <div class="ansys-step"><span>02</span><h3>Load</h3><p>Define material properties, supports, forces, contacts, and realistic boundary conditions.</p></div>
-          <div class="ansys-step"><span>03</span><h3>Solve</h3><p>Evaluate mesh quality and solve for stress, strain, deformation, or other required outputs.</p></div>
-          <div class="ansys-step"><span>04</span><h3>Interpret</h3><p>Compare results against design requirements and use them to guide engineering decisions.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ansys-gallery-section">
+  <section class="ansys-project-block" id="boundary-layer">
     <div class="ansys-shell">
-      <div class="ansys-gallery-header">
+      <div class="ansys-project-intro">
         <div>
-          <p class="ansys-label">Project Gallery</p>
-          <h2>Analysis Projects</h2>
+          <p class="ansys-label">Project 01</p>
+          <h2>Laminar Boundary Layer CFD Analysis</h2>
+          <p class="ansys-meta">ANSYS Fluent · Laminar Flow · Mesh Convergence · Blasius Validation</p>
         </div>
-        <p>Each project can include the CAD model, mesh, loading and boundary conditions, stress and deformation results, and a technical report or design summary.</p>
+
+        <div class="ansys-project-copy">
+          <p>Developed a two-dimensional ANSYS Fluent model to investigate laminar boundary-layer development over a flat plate. The model used a 2 m × 1 m computational domain with a wall-biased mesh to resolve the near-wall velocity gradient and capture boundary-layer growth downstream.</p>
+          <p>Evaluated velocity magnitude, x- and y-velocity, static pressure, vectors, and streamlines to interpret the flow field. The simulation was repeated using four progressively refined grids to assess mesh sensitivity and verify that the predicted velocity profiles were approaching grid-independent behavior.</p>
+          <p>Validated the numerical solution against the analytical Blasius boundary-layer solution at x = 1 m and x = 2 m. The CFD and analytical profiles showed the same physical trend and similar profile shapes, while the simulated boundary-layer thickness remained lower than the analytical prediction.</p>
+        </div>
       </div>
 
-      <div class="ansys-gallery">
-        <figure class="ansys-card">
-          <div class="ansys-card-media">Project image coming soon</div>
-          <figcaption><h3>Structural Analysis Project</h3><p>Geometry, loading, stress, deformation, and design validation.</p></figcaption>
+      <div class="ansys-stats">
+        <div><span>Domain</span><strong>2 m × 1 m</strong></div>
+        <div><span>Free-stream velocity</span><strong>0.5 m/s</strong></div>
+        <div><span>Grid study</span><strong>50×60 → 300×360</strong></div>
+        <div><span>Validation</span><strong>Blasius solution</strong></div>
+      </div>
+
+      <div class="ansys-feature-grid">
+        <figure class="ansys-figure ansys-figure-wide">
+          <a href="{{ '/assets/images/ansys/boundary-layer-mesh.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/boundary-layer-mesh.png' | relative_url }}" alt="Biased computational mesh for flat plate boundary layer simulation"></a>
+          <figcaption>Wall-biased computational mesh used to resolve near-wall velocity gradients.</figcaption>
         </figure>
-        <figure class="ansys-card">
-          <div class="ansys-card-media">Project image coming soon</div>
-          <figcaption><h3>Finite Element Study</h3><p>Model setup, boundary conditions, mesh, and result interpretation.</p></figcaption>
-        </figure>
-        <figure class="ansys-card">
-          <div class="ansys-card-media">Project image coming soon</div>
-          <figcaption><h3>Design Verification</h3><p>Simulation results used to evaluate strength, stiffness, and design performance.</p></figcaption>
+
+        <figure class="ansys-figure ansys-figure-wide">
+          <a href="{{ '/assets/images/ansys/velocity-magnitude-contour.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/velocity-magnitude-contour.png' | relative_url }}" alt="Velocity magnitude contour for flat plate boundary layer"></a>
+          <figcaption>Velocity magnitude contour showing boundary-layer development along the plate.</figcaption>
         </figure>
       </div>
 
-      <div class="ansys-note">Upload ANSYS project images to <strong>assets/images/ansys/</strong>. Technical reports can be added under <strong>assets/</strong>. Once the files are uploaded, this page can be populated with the actual projects, captions, analysis results, and report buttons.</div>
+      <div class="ansys-gallery ansys-project-gallery">
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/x-velocity-contour.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/x-velocity-contour.png' | relative_url }}" alt="X velocity contour"></a></div><figcaption><h3>X Velocity</h3><p>Streamwise velocity field through the developing boundary layer.</p></figcaption></figure>
+
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/y-velocity-contour.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/y-velocity-contour.png' | relative_url }}" alt="Y velocity contour"></a></div><figcaption><h3>Y Velocity</h3><p>Normal velocity component associated with boundary-layer growth.</p></figcaption></figure>
+
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/static-pressure-contour.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/static-pressure-contour.png' | relative_url }}" alt="Static pressure contour"></a></div><figcaption><h3>Static Pressure</h3><p>Pressure field across the computational domain.</p></figcaption></figure>
+
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/velocity-vectors.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/velocity-vectors.png' | relative_url }}" alt="Velocity vector plot"></a></div><figcaption><h3>Velocity Vectors</h3><p>Vector visualization of local flow direction and magnitude.</p></figcaption></figure>
+
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/velocity-streamlines.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/velocity-streamlines.png' | relative_url }}" alt="Velocity streamlines"></a></div><figcaption><h3>Streamlines</h3><p>Flow trajectories through the flat-plate domain.</p></figcaption></figure>
+
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/velocity-profiles.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/velocity-profiles.png' | relative_url }}" alt="Velocity profiles at x equals 1 and 2 meters"></a></div><figcaption><h3>Velocity Profiles</h3><p>Velocity magnitude versus distance from the plate at two downstream locations.</p></figcaption></figure>
+
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/x-velocity-grid-convergence.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/x-velocity-grid-convergence.png' | relative_url }}" alt="X velocity grid convergence plot"></a></div><figcaption><h3>X Velocity Grid Study</h3><p>Comparison of streamwise velocity across four grid resolutions.</p></figcaption></figure>
+
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/y-velocity-grid-convergence.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/y-velocity-grid-convergence.png' | relative_url }}" alt="Y velocity grid convergence plot"></a></div><figcaption><h3>Y Velocity Grid Study</h3><p>Mesh-refinement comparison of the normal velocity component.</p></figcaption></figure>
+
+        <figure class="ansys-card ansys-card-emphasis"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/analytical-vs-cfd.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/analytical-vs-cfd.png' | relative_url }}" alt="Analytical Blasius solution compared with CFD results"></a></div><figcaption><h3>Analytical vs. CFD Validation</h3><p>Comparison of the finest-grid Fluent results with the analytical Blasius velocity profiles.</p></figcaption></figure>
+      </div>
+
+      <div class="ansys-results-box">
+        <p class="ansys-label">Key Result</p>
+        <h3>Simulation captured the correct boundary-layer growth trend</h3>
+        <p>The computational and analytical profiles showed similar shapes and both predicted an increase in boundary-layer thickness downstream. Using the 99% free-stream velocity criterion, the CFD solution predicted boundary-layer thicknesses of 20.79 mm at x = 1 m and 29.14 mm at x = 2 m, compared with analytical values of 27.55 mm and 38.97 mm.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ansys-next-section">
+    <div class="ansys-shell">
+      <p class="ansys-label">Additional CFD Projects</p>
+      <h2>More analyses coming next</h2>
+      <p>Laminar pipe flow with heat transfer and compressible flow over a NACA 0012 airfoil will be added here as additional CFD studies.</p>
     </div>
   </section>
 </div>
