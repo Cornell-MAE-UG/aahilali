@@ -14,6 +14,7 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
       <div class="cev-hero-actions">
         <a class="cev-btn cev-btn-primary" href="https://www.cornellelectricvehicles.org/" target="_blank" rel="noopener">Learn More About CEV</a>
         <a class="cev-btn cev-btn-secondary" href="#cev-collage">Click here to see photos :)</a>
+        <a class="cev-btn cev-btn-secondary" href="{{ '/assets/cev-full-technical-report.pdf' | relative_url }}" target="_blank" rel="noopener">Click here for the project's full technical report.</a>
       </div>
       <div class="cev-hero-image-wrap"><img class="cev-hero-image" src="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" alt="Cornell Electric Vehicles competition car"></div>
     </div>
