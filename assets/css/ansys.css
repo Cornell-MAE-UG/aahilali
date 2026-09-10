@@ -19,199 +19,211 @@
 .ansys-page {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top right, rgba(255, 138, 0, 0.08), transparent 32%),
+    radial-gradient(circle at top right, rgba(255, 138, 0, 0.055), transparent 30%),
     #090b10;
   color: #f3f4f6;
-  padding-bottom: 90px;
+  padding-bottom: 76px;
 }
 
 .ansys-shell {
-  width: min(1460px, calc(100% - 36px));
+  width: min(1320px, calc(100% - 42px));
   margin: 0 auto;
 }
 
 .ansys-hero {
-  padding: 76px 0 54px;
-  border-bottom: 1px solid #232936;
+  padding: 54px 0 42px;
+  border-bottom: 1px solid #202631;
 }
 
 .ansys-kicker,
 .ansys-label {
-  margin: 0 0 10px;
+  margin: 0 0 9px;
   color: #ff9c32;
   font-family: Inter, Arial, sans-serif;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
 }
 
 .ansys-title {
   margin: 0;
-  max-width: 980px;
+  max-width: 850px;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(3rem, 6.5vw, 6rem);
-  line-height: 0.98;
-  font-weight: 600;
-  letter-spacing: -0.045em;
+  font-size: clamp(2.6rem, 5vw, 4.55rem);
+  line-height: 1.02;
+  font-weight: 500;
+  letter-spacing: -0.028em;
 }
 
 .ansys-subtitle {
-  max-width: 900px;
-  margin: 24px 0 0;
-  color: #aeb5c3;
-  font-size: 1.08rem;
-  line-height: 1.75;
+  max-width: 760px;
+  margin: 18px 0 0;
+  color: #a7afbd;
+  font-size: 1rem;
+  line-height: 1.68;
 }
 
 .ansys-project-block {
-  padding: 62px 0 24px;
+  padding: 54px 0 18px;
+}
+
+.ansys-project-block + .ansys-project-block {
+  margin-top: 38px;
+  padding-top: 58px;
+  border-top: 1px solid #202631;
 }
 
 .ansys-project-intro {
   display: grid;
-  grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.6fr);
-  gap: 54px;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.5fr);
+  gap: 44px;
   align-items: start;
 }
 
 .ansys-project-intro h2,
 .ansys-next-section h2 {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2.2rem, 4vw, 3.8rem);
-  line-height: 1.03;
-  letter-spacing: -0.03em;
+  font-size: clamp(1.9rem, 3.15vw, 3.05rem);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.022em;
 }
 
 .ansys-meta {
-  margin: 18px 0 0;
+  margin: 15px 0 0;
   color: #7f8796;
   font-family: Inter, Arial, sans-serif;
-  font-size: 0.88rem;
-  line-height: 1.65;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.ansys-project-copy {
+  max-width: 790px;
 }
 
 .ansys-project-copy p {
-  margin: 0 0 18px;
-  color: #b4bac6;
-  line-height: 1.82;
-  font-size: 1rem;
+  margin: 0 0 14px;
+  color: #b2b8c4;
+  line-height: 1.74;
+  font-size: 0.96rem;
 }
 
 .ansys-stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  margin: 34px 0 18px;
+  gap: 10px;
+  margin: 28px 0 16px;
 }
 
 .ansys-stats div {
-  padding: 18px 20px;
+  padding: 15px 17px;
   border: 1px solid #252c39;
-  background: #10141c;
+  background: rgba(16, 20, 28, 0.82);
 }
 
 .ansys-stats span {
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   color: #7f8796;
   font-family: Inter, Arial, sans-serif;
-  font-size: 0.73rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.075em;
 }
 
 .ansys-stats strong {
   color: #f2f4f7;
   font-family: Inter, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.94rem;
   font-weight: 600;
 }
 
 .ansys-calcs {
-  margin: 34px 0 18px;
-  padding: 28px;
+  margin: 28px 0 16px;
+  padding: 23px;
   border: 1px solid #252c39;
   background: linear-gradient(145deg, #10141c, #0c1017);
 }
 
+.ansys-insight-panel {
+  background: linear-gradient(145deg, rgba(20, 23, 31, 0.98), rgba(11, 15, 21, 0.98));
+}
+
 .ansys-calcs-header {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.4fr);
-  gap: 40px;
+  grid-template-columns: minmax(250px, 0.82fr) minmax(0, 1.35fr);
+  gap: 34px;
   align-items: end;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .ansys-calcs-header h3 {
   margin: 0;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1.7rem, 3vw, 2.6rem);
-  line-height: 1.08;
+  font-size: clamp(1.45rem, 2.35vw, 2.15rem);
+  line-height: 1.12;
+  font-weight: 500;
 }
 
 .ansys-calcs-header > p {
   margin: 0;
   color: #9ca4b3;
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.65;
 }
 
 .ansys-calc-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
+  gap: 10px;
+}
+
+.ansys-calc-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .ansys-calc-card {
-  padding: 20px;
-  border: 1px solid #2a313f;
+  padding: 17px;
+  border: 1px solid #29303d;
   background: #0b0f15;
 }
 
-.ansys-calc-number {
-  display: block;
-  margin-bottom: 20px;
-  color: #ff9c32;
-  font-family: Inter, Arial, sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-}
-
 .ansys-calc-card h4 {
-  margin: 0 0 13px;
+  margin: 0 0 11px;
   font-family: Inter, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .ansys-equation {
-  margin-bottom: 14px;
-  padding: 11px 12px;
+  margin-bottom: 12px;
+  padding: 9px 11px;
   border-left: 2px solid #ff9c32;
   background: #111722;
   color: #f0f2f5;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 0.94rem;
+  line-height: 1.45;
   overflow-wrap: anywhere;
 }
 
 .ansys-calc-card p {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   color: #8f97a7;
-  font-size: 0.84rem;
-  line-height: 1.6;
+  font-size: 0.8rem;
+  line-height: 1.55;
 }
 
 .ansys-calc-values {
   display: flex;
   justify-content: space-between;
-  gap: 14px;
-  padding: 9px 0;
+  gap: 12px;
+  padding: 8px 0;
   border-top: 1px solid #202632;
   font-family: Inter, Arial, sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
 }
 
 .ansys-calc-values span {
@@ -225,15 +237,15 @@
 }
 
 .ansys-calc-note {
-  margin: 12px 0 0 !important;
+  margin: 10px 0 0 !important;
   color: #9da5b4 !important;
 }
 
 .ansys-feature-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  margin: 14px 0;
+  gap: 12px;
+  margin: 12px 0;
 }
 
 .ansys-figure {
@@ -247,36 +259,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 360px;
+  min-height: 300px;
   background: #0b0f15;
-  padding: 8px;
+  padding: 7px;
 }
 
 .ansys-figure img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 520px;
+  max-height: 430px;
   object-fit: contain;
 }
 
 .ansys-figure figcaption {
-  padding: 12px 14px 14px;
+  padding: 11px 13px 13px;
   border-top: 1px solid #252c39;
   color: #929aab;
   font-family: Inter, Arial, sans-serif;
-  font-size: 0.82rem;
-  line-height: 1.5;
+  font-size: 0.78rem;
+  line-height: 1.48;
+}
+
+.ansys-figure figcaption strong {
+  color: #cfd4dc;
+  font-weight: 600;
 }
 
 .ansys-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  gap: 12px;
+}
+
+.ansys-gallery-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .ansys-project-gallery {
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .ansys-card {
@@ -321,20 +342,21 @@
 }
 
 .ansys-card figcaption {
-  padding: 14px 15px 16px;
+  padding: 12px 13px 14px;
 }
 
 .ansys-card h3 {
-  margin: 0 0 6px;
+  margin: 0 0 5px;
   font-family: Inter, Arial, sans-serif;
-  font-size: 0.96rem;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .ansys-card p {
   margin: 0;
   color: #8e96a5;
-  font-size: 0.82rem;
-  line-height: 1.5;
+  font-size: 0.78rem;
+  line-height: 1.48;
 }
 
 .ansys-card-emphasis {
@@ -342,74 +364,81 @@
 }
 
 .ansys-results-box {
-  margin-top: 24px;
-  padding: 24px 26px;
+  margin-top: 20px;
+  padding: 20px 22px;
   border: 1px solid #2a313f;
   border-left: 3px solid #ff9c32;
   background: #10141c;
 }
 
 .ansys-results-box h3 {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+  font-size: clamp(1.3rem, 2vw, 1.85rem);
+  line-height: 1.15;
+  font-weight: 500;
 }
 
 .ansys-results-box p:last-child {
   margin: 0;
-  max-width: 1050px;
+  max-width: 1020px;
   color: #aeb5c3;
-  line-height: 1.75;
-}
-
-.ansys-next-section {
-  margin-top: 54px;
-  padding: 54px 0 18px;
-  border-top: 1px solid #232936;
-}
-
-.ansys-next-section p:last-child {
-  max-width: 760px;
-  color: #9ca4b3;
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.65;
 }
 
 @media (max-width: 1040px) {
   .ansys-project-intro,
   .ansys-calcs-header {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 22px;
   }
 
   .ansys-stats,
   .ansys-gallery,
-  .ansys-calc-grid {
+  .ansys-calc-grid,
+  .ansys-calc-grid-two,
+  .ansys-gallery-two {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 760px) {
+  .ansys-shell {
+    width: min(100% - 28px, 1320px);
+  }
+
+  .ansys-hero {
+    padding: 42px 0 34px;
+  }
+
   .ansys-feature-grid {
     grid-template-columns: 1fr;
   }
 
   .ansys-figure a {
-    min-height: 260px;
+    min-height: 230px;
   }
 }
 
 @media (max-width: 620px) {
-  .ansys-hero {
-    padding-top: 50px;
+  .ansys-title {
+    font-size: clamp(2.25rem, 12vw, 3.25rem);
   }
 
   .ansys-stats,
   .ansys-gallery,
-  .ansys-calc-grid {
+  .ansys-calc-grid,
+  .ansys-calc-grid-two,
+  .ansys-gallery-two {
     grid-template-columns: 1fr;
   }
 
   .ansys-calcs {
-    padding: 20px 16px;
+    padding: 18px 14px;
+  }
+
+  .ansys-project-block {
+    padding-top: 42px;
   }
 }
