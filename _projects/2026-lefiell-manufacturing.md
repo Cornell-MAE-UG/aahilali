@@ -39,7 +39,7 @@ image: /assets/images/lefiell/lefiell-card.svg
       <div class="lf-section-intro">
         <p class="lf-section-label">Selected Work</p>
         <h2>Manufacturing engineering in a production environment</h2>
-        <p class="lf-section-summary">My work focused on turning customer drawings and CAD into practical manufacturing plans, tooling, and verification methods that could support production.</p>
+        <p class="lf-section-summary">I worked at the intersection of design and manufacturing, translating customer drawings and CAD into machining plans, tooling, and inspection methods used to support production.</p>
       </div>
 
       <article class="lf-story lf-story-featured">
@@ -49,10 +49,6 @@ image: /assets/images/lefiell/lefiell-card.svg
           <h3>Boeing main landing gear tubular components</h3>
           <p>I developed Autodesk Inventor 3D models and process drawings for five tubular components, translating customer drawings into machining operation sequences, intermediate part geometry, datum schemes, fixturing and workholding requirements, and GD&amp;T per ASME Y14.5.</p>
           <p>The most important part of this work was learning to design the manufacturing sequence, not just the final part. Each operation had to leave the next setup with usable locating features, practical tool access, and dimensions that could be inspected during production. All five parts were released to production.</p>
-        </div>
-        <div class="lf-story-aside">
-          <span>What this taught me</span>
-          <p>Manufacturing drawings have to communicate how a part will actually be made, held, located, and checked at every stage of the process.</p>
         </div>
       </article>
 
