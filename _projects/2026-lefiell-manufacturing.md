@@ -1,217 +1,93 @@
 ---
 layout: lefiell
 title: "LeFiell Manufacturing"
-excerpt: "Manufacturing engineering internship focused on aerospace process planning, custom tooling, inspection, reverse engineering, and production release."
+excerpt: "Manufacturing engineering internship focused on aerospace process planning, tooling, inspection, reverse engineering, and production work."
 permalink: /projects/lefiell-manufacturing/
 image: /assets/images/lefiell/lefiell-card.svg
 ---
 
 <div class="lf-page">
   <section class="lf-hero">
-    <div class="lf-shell lf-hero-grid">
-      <div class="lf-hero-copy">
-        <p class="lf-eyebrow">Manufacturing Engineering Internship · Summer 2026</p>
-        <h1>LeFiell Manufacturing</h1>
-        <p class="lf-hero-subtitle">Manufacturing engineering for precision aerospace components, with work spanning process planning, custom tooling, inspection design, reverse engineering, and production verification.</p>
-
-        <div class="lf-hero-actions">
-          <a class="lf-btn lf-btn-primary" href="https://www.lefiell.com/" target="_blank" rel="noopener">Company Website</a>
-          <a class="lf-btn lf-btn-secondary" href="#selected-work">Selected Work</a>
-        </div>
-
-        <div class="lf-hero-meta">
-          <span>Manufacturing Engineering Intern</span>
-          <span>Santa Fe Springs, CA</span>
-          <span>Summer 2026</span>
-        </div>
-      </div>
-
-      <div class="lf-brand-card">
-        <div class="lf-brand-mark" aria-label="LeFiell Manufacturing">
-          <i class="bi bi-airplane-engines"></i>
-          <div>
-            <strong>LEFIELL</strong>
-            <span>MANUFACTURING COMPANY</span>
-          </div>
-        </div>
-        <p>Precision metallic tubular parts and assemblies for commercial aircraft, aerospace, defense, and industrial markets.</p>
-        <div class="lf-brand-facts">
-          <span>Founded 1930</span>
-          <span>Employee owned</span>
-          <span>Aerospace manufacturing</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="lf-summary">
     <div class="lf-shell">
-      <div class="lf-impact-grid">
-        <div><strong>5</strong><span>Boeing landing gear tubular components supported through process planning and release</span></div>
-        <div><strong>10</strong><span>Custom RH and LH UNJF thread plugs designed for manufacturing use</span></div>
-        <div><strong>3 → 1</strong><span>Inspection gauges consolidated into one gundrill depth gauge concept</span></div>
-        <div><strong>CAD → Production</strong><span>Work connected customer requirements, tooling, machining, inspection, and release</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="lf-context">
-    <div class="lf-shell lf-two-col">
-      <div>
-        <p class="lf-section-label">Engineering Environment</p>
-        <h2>Working inside a production aerospace machine shop</h2>
-      </div>
-      <div class="lf-body-copy">
-        <p>LeFiell publicly describes its business around precision metallic tubular parts and assemblies, with capabilities that include machining, gundrilling, metal forming, special processes, and design engineering. My internship was centered on the manufacturing engineering side of that environment, where drawings and CAD had to become practical, inspectable machining plans.</p>
-        <p>The work required balancing design intent with setup strategy, fixturing, tool access, datum control, in process inspection, and feedback from CNC programmers. The goal was not simply to model parts, but to make sure the manufacturing package could actually move into production.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="lf-confidentiality">
-    <div class="lf-shell">
-      <div class="lf-confidentiality-card">
-        <div class="lf-lock"><i class="bi bi-shield-lock"></i></div>
-        <div>
-          <p class="lf-section-label">Customer Confidentiality</p>
-          <h2>Technical work shown without proprietary geometry</h2>
-          <p>Customer drawings, part numbers, dimensions, tolerances, and production geometry are intentionally omitted. The illustrations on this page are generic and explain the engineering approach only. They are not reproductions of customer hardware or manufacturing drawings.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="lf-work" id="selected-work">
-    <div class="lf-shell">
-      <div class="lf-section-heading">
-        <div>
-          <p class="lf-section-label">Selected Work</p>
-          <h2>Manufacturing engineering contributions</h2>
-        </div>
-        <p>I focused this page on the work that best shows design judgment, manufacturing thinking, and production impact rather than trying to recreate proprietary hardware.</p>
-      </div>
-
-      <article class="lf-work-card lf-work-card-wide">
-        <div class="lf-work-number">01</div>
-        <div class="lf-work-content">
-          <h3>Manufacturing Process Planning and Production Release</h3>
-          <p>Developed Autodesk Inventor 3D models and process drawings for five Boeing main landing gear tubular components. I translated customer drawings into machining operation sequences, intermediate part geometry, datum schemes, fixturing and workholding requirements, GD&amp;T, and in process dimensions.</p>
-          <div class="lf-work-value">
-            <span>Engineering value</span>
-            <p>Built manufacturing packages that connected design requirements to real machining setups. All five parts were released to production.</p>
-          </div>
-        </div>
-        <div class="lf-process-mini" aria-label="Conceptual manufacturing process flow">
-          <span>Customer requirements</span><b>→</b>
-          <span>Process drawing</span><b>→</b>
-          <span>Setup and datums</span><b>→</b>
-          <span>Production</span>
-        </div>
-      </article>
-
-      <div class="lf-work-grid">
-        <article class="lf-work-card">
-          <div class="lf-work-number">02</div>
-          <div class="lf-work-content">
-            <h3>Gundrill Depth Gauge</h3>
-            <p>Designed a single inspection gauge to verify the internal radius tangent point location on three tubular parts. The concept used axially spaced gauging ridges matched to different bore depths so one tool could replace three separate gauges.</p>
-            <div class="lf-work-value">
-              <span>Engineering value</span>
-              <p>Reduced inspection tooling count while preserving distinct depth checks for three configurations.</p>
-            </div>
-          </div>
-          <div class="lf-gauge-visual" aria-label="Generic stepped depth gauge illustration">
-            <div class="lf-gauge-shaft"></div>
-            <div class="lf-gauge-ridge lf-ridge-1"></div>
-            <div class="lf-gauge-ridge lf-ridge-2"></div>
-            <div class="lf-gauge-ridge lf-ridge-3"></div>
-            <div class="lf-gauge-handle"></div>
-          </div>
-          <p class="lf-concept-caption">Generic concept illustration, not production geometry</p>
-        </article>
-
-        <article class="lf-work-card">
-          <div class="lf-work-number">03</div>
-          <div class="lf-work-content">
-            <h3>Custom Thread Plug Tooling</h3>
-            <p>Designed ten custom thread plugs for right hand and left hand UNJF 3B threads per AS8879. I built Inventor assemblies for fit checks, verified thread engagement and drilling clearance, and iterated the tooling geometry with CNC programmers.</p>
-            <div class="lf-work-value">
-              <span>Engineering value</span>
-              <p>Used CAD as a manufacturing check before machining tooling, then incorporated programmer feedback into the final geometry.</p>
-            </div>
-          </div>
-          <div class="lf-thread-visual" aria-label="Generic thread plug illustration">
-            <div class="lf-thread-body"><span></span><span></span><span></span><span></span><span></span></div>
-            <div class="lf-thread-shoulder"></div>
-            <div class="lf-thread-shank"></div>
-          </div>
-          <p class="lf-concept-caption">Generic concept illustration, not production geometry</p>
-        </article>
-      </div>
-
-      <div class="lf-secondary-grid">
-        <article class="lf-secondary-card">
-          <p class="lf-card-kicker">Reverse Engineering</p>
-          <h3>Main landing gear door forward stop fitting</h3>
-          <p>Reconstructed part geometry from a physical component and legacy Boeing hand drawing using caliper measurements, then modeled the component in Autodesk Inventor for manufacturing.</p>
-        </article>
-
-        <article class="lf-secondary-card">
-          <p class="lf-card-kicker">Model and Drawing Verification</p>
-          <h3>Sonobuoy launch components</h3>
-          <p>Cross checked CATIA V5 customer models against Autodesk Inventor models and engineering drawings, verifying dimensional accuracy, hole locations, and feature geometry before production.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="lf-workflow">
-    <div class="lf-shell">
-      <div class="lf-section-heading">
-        <div>
-          <p class="lf-section-label">Manufacturing Workflow</p>
-          <h2>How I approached production engineering</h2>
-        </div>
-        <p>The internship strengthened the connection between CAD and the decisions required to manufacture, inspect, and release aerospace hardware.</p>
-      </div>
-
-      <div class="lf-flow">
-        <div><span>01</span><strong>Interpret</strong><p>Customer drawings, CAD, specifications, and design intent</p></div>
-        <div><span>02</span><strong>Plan</strong><p>Machining sequence, intermediate geometry, datums, and setups</p></div>
-        <div><span>03</span><strong>Design</strong><p>Tooling, gauges, fit checks, fixturing, and workholding strategy</p></div>
-        <div><span>04</span><strong>Collaborate</strong><p>Iterate with CNC programmers around access and manufacturability</p></div>
-        <div><span>05</span><strong>Verify</strong><p>Check geometry, inspection requirements, and model consistency</p></div>
-        <div><span>06</span><strong>Release</strong><p>Complete manufacturing documentation for production use</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="lf-tools">
-    <div class="lf-shell">
-      <p class="lf-section-label">Tools and Methods</p>
-      <div class="lf-chip-row">
+      <p class="lf-eyebrow">Manufacturing Engineering Intern · Summer 2026</p>
+      <h1>LeFiell Manufacturing</h1>
+      <p class="lf-hero-subtitle">A summer working on aerospace manufacturing problems where CAD, drawings, tooling, machining strategy, inspection, and production all had to connect.</p>
+      <div class="lf-hero-meta">
+        <span>Santa Fe Springs, California</span>
         <span>Autodesk Inventor</span>
         <span>CATIA V5</span>
         <span>GD&amp;T</span>
-        <span>ASME Y14.5</span>
-        <span>AS8879</span>
-        <span>Process Planning</span>
-        <span>Fixture and Workholding Design</span>
-        <span>CNC Collaboration</span>
-        <span>Gundrilling</span>
-        <span>Inspection Tooling</span>
-        <span>Reverse Engineering</span>
-        <span>Production Verification</span>
       </div>
     </div>
   </section>
 
-  <section class="lf-takeaway">
+  <section class="lf-reflection lf-section">
+    <div class="lf-shell lf-reading-grid">
+      <div class="lf-section-side">
+        <p class="lf-section-label">Reflection</p>
+        <h2>Learning what it takes to move a design into production</h2>
+      </div>
+      <div class="lf-prose">
+        <p>Before this internship, most of my CAD experience was centered on defining the final part. At LeFiell, I started thinking much more about everything that has to happen before a finished part can exist: which features are created in each operation, what datums are available at that point in the process, how the part will be held, what a cutter can actually reach, and how the result will be inspected.</p>
+        <p>That changed the way I think about mechanical design. A model can be dimensionally correct and still create problems on the shop floor. The manufacturing engineer has to translate design intent into a sequence that machinists, programmers, and inspectors can actually use. Working through that translation was the most valuable part of the internship for me.</p>
+        <p>I also learned how much iteration happens between engineering and production. Tooling that looked reasonable in CAD still had to be checked for thread engagement, drilling clearance, access, and practical use. Conversations with CNC programmers often changed the design for the better because they brought in constraints that were not obvious from the model alone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lf-section lf-work" id="selected-work">
     <div class="lf-shell">
-      <div class="lf-takeaway-card">
-        <p class="lf-section-label">Takeaway</p>
-        <h2>Design decisions had to survive the shop floor</h2>
-        <p>The internship moved my CAD work beyond part modeling. I had to think about how geometry would be established across operations, how features would be located and inspected, how tooling would interact with the part, and how a manufacturing package could communicate those decisions clearly enough to support production.</p>
+      <div class="lf-section-intro">
+        <p class="lf-section-label">Selected Work</p>
+        <h2>The projects that shaped the experience</h2>
+      </div>
+
+      <article class="lf-story">
+        <div class="lf-story-title">
+          <span>01</span>
+          <h3>Process planning for Boeing landing gear components</h3>
+        </div>
+        <div class="lf-story-copy">
+          <p>I developed Autodesk Inventor models and process drawings for five main landing gear tubular components, translating customer drawings into machining operation sequences, intermediate part geometry, datum schemes, fixturing and workholding requirements, GD&amp;T, and in process dimensions.</p>
+          <p>The part of this work that mattered most was learning to think in intermediate states rather than only the final geometry. Each operation had to leave the next setup with usable locating features and enough information for machining and inspection. All five parts were ultimately released to production.</p>
+        </div>
+      </article>
+
+      <article class="lf-story">
+        <div class="lf-story-title">
+          <span>02</span>
+          <h3>Custom tooling and inspection design</h3>
+        </div>
+        <div class="lf-story-copy">
+          <p>I designed ten custom thread plugs for right hand and left hand UNJF 3B threads per AS8879. I used Inventor assemblies to check thread engagement and drilling clearance, then iterated the tooling geometry with CNC programmers before manufacturing.</p>
+          <p>I also created a gundrill depth gauge for three tubular parts that needed the location of an internal radius tangent point verified at different bore depths. Instead of using three separate inspection gauges, I designed one gauge with axially spaced gauging features so the same tool could perform all three checks.</p>
+          <p>This work made tooling feel less like an accessory to the part and more like a design problem of its own. The tool had to be simple to use, physically compatible with the machining process, and able to verify exactly the feature the drawing cared about.</p>
+        </div>
+      </article>
+
+      <article class="lf-story">
+        <div class="lf-story-title">
+          <span>03</span>
+          <h3>Reverse engineering and model verification</h3>
+        </div>
+        <div class="lf-story-copy">
+          <p>I reverse engineered a main landing gear door forward stop fitting from a physical component and a legacy Boeing hand drawing. Using caliper measurements, I reconstructed the geometry and created the Autodesk Inventor model needed for manufacturing.</p>
+          <p>On other work, I cross checked CATIA V5 customer models against Inventor models and engineering drawings for sonobuoy launch components, verifying dimensions, hole locations, and feature geometry before production.</p>
+          <p>Those tasks reinforced the importance of treating CAD as an engineering record rather than just a visual model. Small inconsistencies between the physical part, customer model, and drawing can become real production problems if they are not resolved before manufacturing begins.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="lf-section lf-closing">
+    <div class="lf-shell lf-reading-grid">
+      <div class="lf-section-side">
+        <p class="lf-section-label">What I Took From It</p>
+        <h2>Manufacturing became part of how I design</h2>
+      </div>
+      <div class="lf-prose">
+        <p>The biggest takeaway from the summer was that manufacturing decisions are design decisions. Datum selection, workholding, tool access, operation order, inspection strategy, and communication with the shop all influence whether a design can be produced reliably.</p>
+        <p>I came away more comfortable moving between drawings, CAD, tooling, and the shop floor, but more importantly I started evaluating my own designs differently. I now think earlier about how a part will be made, what needs to be measured, what can realistically be held or reached, and what information another engineer or machinist will need to carry the design forward.</p>
       </div>
     </div>
   </section>
