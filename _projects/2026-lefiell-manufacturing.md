@@ -45,7 +45,6 @@ image: /assets/images/lefiell/lefiell-cnc-tubular-machining.png
     <div class="lf-shell">
       <div class="lf-gallery-heading">
         <p class="lf-section-label">Manufacturing Environment</p>
-        <p class="lf-gallery-note">Public LeFiell manufacturing imagery shown for context. These are not the specific components or tooling from the projects described below.</p>
       </div>
 
       <div class="lf-gallery">
