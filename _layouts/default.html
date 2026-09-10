@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet">
 
   <!-- Portfolio CSS -->
@@ -49,9 +49,14 @@
   <link
     rel="stylesheet"
     href="{{ '/assets/css/ansys.css' | relative_url }}?v={{ site.github.build_revision }}">
+
+  <!-- LeFiell internship styling -->
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/lefiell.css' | relative_url }}?v={{ site.github.build_revision }}">
 </head>
 
-<body class="{% if page.layout == 'cev' %}cev-body{% elsif page.layout == 'mechatronics' %}mechatronics-body{% elsif page.layout == 'ansys' %}ansys-body{% endif %}">
+<body class="{% if page.layout == 'cev' %}cev-body{% elsif page.layout == 'mechatronics' %}mechatronics-body{% elsif page.layout == 'ansys' %}ansys-body{% elsif page.layout == 'lefiell' %}lefiell-body{% endif %}">
 
   <header class="site-header">
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -92,19 +97,26 @@
               </button>
 
               <div class="project-menu">
-                {% assign featured_navigation_projects = site.projects | where: "featured_home", true %}
-                {% for project in featured_navigation_projects %}
-                  <a class="project-menu-link" href="{{ project.url | relative_url }}">
-                    {{ project.title }}
-                  </a>
-                {% endfor %}
+                <a class="project-menu-link" href="{{ '/projects/cornell-electric-vehicles/' | relative_url }}">
+                  Cornell Electric Vehicles
+                </a>
+                <a class="project-menu-link" href="{{ '/projects/lefiell-manufacturing/' | relative_url }}">
+                  LeFiell Manufacturing
+                </a>
+                <a class="project-menu-link" href="{{ '/projects/ansys/' | relative_url }}">
+                  ANSYS / CFD Projects
+                </a>
 
                 {% assign navigation_projects = site.projects | sort: "path" | reverse %}
                 {% for project in navigation_projects %}
-                  {% unless project.featured_home %}
-                    <a class="project-menu-link" href="{{ project.url | relative_url }}">
-                      {{ project.title }}
-                    </a>
+                  {% unless project.url == '/projects/cornell-electric-vehicles/' %}
+                    {% unless project.url == '/projects/lefiell-manufacturing/' %}
+                      {% unless project.url == '/projects/ansys/' %}
+                        <a class="project-menu-link" href="{{ project.url | relative_url }}">
+                          {{ project.title }}
+                        </a>
+                      {% endunless %}
+                    {% endunless %}
                   {% endunless %}
                 {% endfor %}
               </div>
