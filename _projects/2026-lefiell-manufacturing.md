@@ -124,9 +124,9 @@ image: /assets/images/lefiell/lefiell-cnc-tubular-machining.png
   <section class="lf-section lf-reflection-bottom">
     <div class="lf-shell lf-reflection-card">
       <p class="lf-section-label">Experience Reflection</p>
-      <h2>Designing with manufacturing in mind</h2>
-      <p>The internship changed how I approach mechanical design because I was working much closer to the point where drawings and CAD become hardware. I became more conscious of setup sequence, datum selection, workholding, cutter access, inspection, and the communication between engineering and the shop floor.</p>
-      <p>Working with CNC programmers also reinforced that good engineering is iterative. A design that works in CAD may still need to change once machining access, tooling, inspection, and operator use are considered. That perspective now carries into how I design parts and assemblies outside of manufacturing engineering.</p>
+      <h2>Designing with the production path in mind</h2>
+      <p>LeFiell gave me experience thinking about a part beyond its final CAD geometry. Process drawings, tooling, inspection, and conversations with CNC programmers forced me to work through how a component would move from one operation to the next: what geometry had to exist at each stage, how the part would be held and located, which features could serve as datums, and how critical dimensions would be verified before release.</p>
+      <p>That made manufacturability much more concrete for me. I now approach design with the full production path in mind, asking earlier whether a part can be set up, machined, inspected, and repeated reliably rather than only whether the final geometry is correct.</p>
     </div>
   </section>
 </div>
