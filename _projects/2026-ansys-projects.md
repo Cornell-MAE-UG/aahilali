@@ -60,11 +60,10 @@ permalink: /projects/ansys/
 
       <div class="ansys-feature-grid">
         <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/boundary-layer-mesh.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/boundary-layer-mesh.png' | relative_url }}" alt="Biased computational mesh for flat plate boundary layer simulation"></a><figcaption><strong>Mesh Strategy.</strong> Wall-biased cells concentrate resolution where the boundary-layer velocity gradient is largest.</figcaption></figure>
-        <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/x-velocity-contour.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/x-velocity-contour.png' | relative_url }}" alt="Streamwise velocity contour for flat plate boundary layer"></a><figcaption><strong>Flow Field.</strong> Streamwise velocity contour visualizing the developing low-speed region adjacent to the plate.</figcaption></figure>
+        <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/velocity-magnitude-contour.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/velocity-magnitude-contour.png' | relative_url }}" alt="Velocity magnitude contour for flat plate boundary layer"></a><figcaption><strong>Flow Field.</strong> Velocity magnitude contour showing the developing low-speed boundary layer and its downstream growth.</figcaption></figure>
       </div>
 
       <div class="ansys-gallery ansys-project-gallery">
-        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/velocity-profiles.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/velocity-profiles.png' | relative_url }}" alt="Boundary layer velocity profiles"></a></div><figcaption><h3>Boundary-Layer Growth</h3><p>Profiles at x = 1 m and x = 2 m show the boundary layer thickening downstream.</p></figcaption></figure>
         <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/x-velocity-grid-convergence.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/x-velocity-grid-convergence.png' | relative_url }}" alt="X velocity grid convergence plot"></a></div><figcaption><h3>Mesh Convergence</h3><p>Streamwise velocity across four grid resolutions demonstrates decreasing sensitivity to refinement.</p></figcaption></figure>
         <figure class="ansys-card ansys-card-emphasis"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/analytical-vs-cfd.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/analytical-vs-cfd.png' | relative_url }}" alt="Analytical Blasius solution compared with CFD results"></a></div><figcaption><h3>Analytical Validation</h3><p>Finest-grid Fluent profiles compared directly with the analytical Blasius solution.</p></figcaption></figure>
       </div>
@@ -129,14 +128,14 @@ permalink: /projects/ansys/
 
       <div class="ansys-gallery ansys-project-gallery">
         <figure class="ansys-card ansys-card-emphasis"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/theoretical-vs-cfd-velocity.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/theoretical-vs-cfd-velocity.png' | relative_url }}" alt="Theoretical and CFD exit velocity profiles"></a></div><figcaption><h3>Velocity Validation</h3><p>Computed outlet velocity nearly overlaps the fully developed analytical parabolic profile.</p></figcaption></figure>
-        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/exit-temperature-grid-convergence.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/exit-temperature-grid-convergence.png' | relative_url }}" alt="Exit temperature profiles for four computational grids"></a></div><figcaption><h3>Grid Convergence</h3><p>Outlet temperature profiles from all four grids are nearly coincident, showing minimal mesh sensitivity.</p></figcaption></figure>
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/average-temperature-along-pipe.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/average-temperature-along-pipe.png' | relative_url }}" alt="Average temperature along heated pipe"></a></div><figcaption><h3>Bulk Temperature Development</h3><p>Mass-weighted average temperature rises from 300 K at the inlet to approximately 374.57 K at the outlet.</p></figcaption></figure>
         <figure class="ansys-card ansys-card-emphasis"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/nusselt-number-validation.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/nusselt-number-validation.png' | relative_url }}" alt="Nusselt number validation"></a></div><figcaption><h3>Nusselt Validation</h3><p>The 50×200 grid predicts Nu<sub>D</sub> = 3.6595 versus 3.6600 theoretical, a 0.01% difference.</p></figcaption></figure>
       </div>
 
       <div class="ansys-results-box">
         <p class="ansys-label">Key Result</p>
         <h3>Verified the CFD solution through independent fluid and thermal benchmarks</h3>
-        <p>The model matched the expected parabolic outlet velocity profile, showed nearly grid-independent temperature behavior, and converged to the theoretical fully developed Nusselt number. Across all four grids, exit Nusselt values remained within approximately 1.1% of theory.</p>
+        <p>The model matched the expected parabolic outlet velocity profile, captured the downstream temperature rise, and converged to the theoretical fully developed Nusselt number. Across all four grids, exit Nusselt values remained within approximately 1.1% of theory.</p>
       </div>
     </div>
   </section>
