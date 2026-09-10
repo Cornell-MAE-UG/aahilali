@@ -40,7 +40,7 @@
 }
 
 .lf-hero {
-  padding: 72px 0 48px;
+  padding: 68px 0 42px;
   border-bottom: 1px solid var(--lf-line);
 }
 
@@ -71,9 +71,9 @@
 
 .lf-brand-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 180px;
+  grid-template-columns: minmax(0, 1fr) 165px;
   align-items: center;
-  gap: 40px;
+  gap: 34px;
 }
 
 .lf-brand-copy {
@@ -84,19 +84,19 @@
   max-width: 840px;
   margin: 0;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2.7rem, 5.4vw, 4.75rem);
+  font-size: clamp(2.55rem, 5vw, 4.4rem);
   font-weight: 600;
   line-height: 1.02;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.04em;
 }
 
 .lf-company-line {
   max-width: 850px;
-  margin: 20px 0 0;
+  margin: 18px 0 0;
   color: #b5becc;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.03rem;
-  line-height: 1.72;
+  font-size: 1rem;
+  line-height: 1.68;
 }
 
 .lf-logo-wrap {
@@ -108,7 +108,7 @@
 .lf-logo-wrap img {
   display: block;
   width: 100%;
-  max-width: 170px;
+  max-width: 155px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.25));
@@ -118,7 +118,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 26px;
+  margin-top: 24px;
 }
 
 .lf-skills span {
@@ -131,35 +131,59 @@
   line-height: 1;
 }
 
-.lf-hero-image {
-  margin: 30px 0 0;
+.lf-gallery-section {
+  padding: 32px 0 6px;
+}
+
+.lf-gallery-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 13px;
+}
+
+.lf-gallery-note {
+  max-width: 670px;
+  margin: 0;
+  color: #7f8998;
+  font-size: 0.74rem;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.lf-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.lf-gallery figure {
+  margin: 0;
   overflow: hidden;
   border: 1px solid var(--lf-line);
-  border-radius: 14px;
+  border-radius: 10px;
   background: var(--lf-panel);
 }
 
-.lf-hero-image img {
+.lf-gallery img {
   display: block;
   width: 100%;
-  height: clamp(260px, 38vw, 440px);
+  height: 170px;
   object-fit: cover;
 }
 
-.lf-hero-image figcaption,
-.lf-story-image figcaption,
-.lf-card-image figcaption {
-  margin: 0;
-  padding: 10px 13px 11px;
-  color: #7f8998;
-  font-size: 0.72rem;
-  line-height: 1.45;
+.lf-gallery figcaption {
+  padding: 9px 11px 10px;
   border-top: 1px solid var(--lf-line);
-  background: rgba(7, 11, 18, 0.55);
+  color: #8791a1;
+  background: rgba(7, 11, 18, 0.45);
+  font-size: 0.7rem;
+  line-height: 1.4;
 }
 
 .lf-section {
-  padding: 58px 0 0;
+  padding: 54px 0 0;
 }
 
 .lf-section-intro {
@@ -198,8 +222,6 @@
 }
 
 .lf-story-featured {
-  grid-template-columns: 42px minmax(0, 1.18fr) minmax(260px, 0.82fr);
-  gap: 24px;
   margin-bottom: 14px;
   border-color: rgba(240, 106, 67, 0.24);
   background:
@@ -239,48 +261,10 @@
   margin-bottom: 0;
 }
 
-.lf-story-image {
-  align-self: stretch;
-  margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--lf-line);
-  border-radius: 10px;
-  background: #0d131d;
-}
-
-.lf-story-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 250px;
-  max-height: 360px;
-  object-fit: cover;
-}
-
 .lf-story-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
-}
-
-.lf-story-with-image {
-  align-content: start;
-}
-
-.lf-card-image {
-  grid-column: 2;
-  margin: 6px 0 0;
-  overflow: hidden;
-  border: 1px solid var(--lf-line);
-  border-radius: 10px;
-  background: #0d131d;
-}
-
-.lf-card-image img {
-  display: block;
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
 }
 
 .lf-secondary-work {
@@ -298,7 +282,7 @@
 }
 
 .lf-reflection-bottom {
-  padding-top: 64px;
+  padding-top: 60px;
 }
 
 .lf-reflection-card {
@@ -315,16 +299,12 @@
 
 @media (max-width: 900px) {
   .lf-brand-row {
-    grid-template-columns: 1fr 140px;
+    grid-template-columns: 1fr 135px;
     gap: 24px;
   }
 
-  .lf-story-featured {
-    grid-template-columns: 38px minmax(0, 1fr);
-  }
-
-  .lf-story-image {
-    grid-column: 2;
+  .lf-gallery img {
+    height: 150px;
   }
 }
 
@@ -333,10 +313,15 @@
     padding-top: 50px;
   }
 
-  .lf-hero-topline {
+  .lf-hero-topline,
+  .lf-gallery-heading {
     align-items: flex-start;
     flex-direction: column;
     gap: 8px;
+  }
+
+  .lf-gallery-note {
+    text-align: left;
   }
 
   .lf-brand-row {
@@ -348,7 +333,11 @@
   }
 
   .lf-logo-wrap img {
-    max-width: 145px;
+    max-width: 140px;
+  }
+
+  .lf-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lf-story-grid,
@@ -362,24 +351,18 @@
     width: min(100% - 26px, 1120px);
   }
 
+  .lf-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .lf-gallery img {
+    height: 185px;
+  }
+
   .lf-story,
   .lf-story-featured {
     grid-template-columns: 1fr;
     padding: 21px;
-  }
-
-  .lf-story-index,
-  .lf-story-image,
-  .lf-card-image {
-    grid-column: 1;
-  }
-
-  .lf-story-image img {
-    min-height: 210px;
-  }
-
-  .lf-card-image img {
-    height: 180px;
   }
 
   .lf-reflection-card {
