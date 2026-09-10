@@ -39,7 +39,7 @@ image: /assets/images/lefiell/lefiell-card.svg
       <div class="lf-section-intro">
         <p class="lf-section-label">Selected Work</p>
         <h2>Manufacturing engineering in a production environment</h2>
-        <p class="lf-section-summary">I worked at the intersection of design and manufacturing, translating customer drawings and CAD into machining plans, tooling, and inspection methods used to support production.</p>
+        <p class="lf-section-summary">My work included developing manufacturing models and process drawings for Boeing landing gear components, designing custom machining and inspection tooling, reverse engineering legacy hardware, and verifying customer CAD and drawings before production.</p>
       </div>
 
       <article class="lf-story lf-story-featured">
