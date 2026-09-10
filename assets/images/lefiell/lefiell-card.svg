@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1324"/>
+      <stop offset="1" stop-color="#253b7d"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  <circle cx="1040" cy="110" r="260" fill="#f05a32" fill-opacity=".10"/>
+  <circle cx="80" cy="760" r="330" fill="#6b86d4" fill-opacity=".12"/>
+  <g transform="translate(180 255)">
+    <rect x="0" y="88" width="510" height="34" rx="17" fill="#cbd4e3"/>
+    <rect x="390" y="75" width="34" height="60" rx="8" fill="#f05a32"/>
+    <rect x="315" y="75" width="22" height="60" rx="8" fill="#eef2f8"/>
+    <rect x="240" y="75" width="22" height="60" rx="8" fill="#eef2f8"/>
+    <rect x="510" y="69" width="90" height="72" rx="14" fill="#4664b4"/>
+  </g>
+  <text x="760" y="320" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">LeFiell</text>
+  <text x="760" y="378" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Manufacturing</text>
+  <text x="760" y="435" fill="#b8c2d6" font-family="Arial, Helvetica, sans-serif" font-size="23" letter-spacing="3">MANUFACTURING ENGINEERING</text>
+  <text x="760" y="476" fill="#b8c2d6" font-family="Arial, Helvetica, sans-serif" font-size="20">Aerospace · Tooling · Process Planning</text>
+</svg>
