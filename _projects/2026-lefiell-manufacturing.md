@@ -64,7 +64,6 @@ image: /assets/images/lefiell/lefiell-cnc-tubular-machining.png
   <section class="lf-section lf-work" id="selected-work">
     <div class="lf-shell">
       <div class="lf-section-intro">
-        <p class="lf-section-label">Selected Work</p>
         <h2>Manufacturing engineering in a production environment</h2>
         <p class="lf-section-summary">My work included developing manufacturing models and process drawings for Boeing landing gear components, designing custom machining and inspection tooling, reverse engineering legacy hardware, and verifying customer CAD and drawings before production.</p>
       </div>
