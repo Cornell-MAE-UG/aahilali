@@ -23,14 +23,14 @@ permalink: /projects/ansys/
           <p class="ansys-meta">ANSYS Fluent · Laminar Flow · Mesh Convergence · Blasius Validation</p>
         </div>
         <div class="ansys-project-copy">
-          <p>Developed a two-dimensional ANSYS Fluent model to study laminar boundary-layer growth over a flat plate. A 2 m × 1 m domain and wall-biased mesh were used to resolve the steep near-wall velocity gradient while maintaining a practical element count away from the plate.</p>
-          <p>Verified the expected laminar regime analytically, solved the model across four progressively refined grids, and compared velocity behavior at x = 1 m and x = 2 m. The numerical results were then validated against the Blasius flat-plate solution rather than relying on contour agreement alone.</p>
+          <p>Developed a two dimensional ANSYS Fluent model to study laminar boundary layer growth over a flat plate. A 2 m × 1 m domain and wall biased mesh were used to resolve the steep near wall velocity gradient while maintaining a practical element count away from the plate.</p>
+          <p>Verified the expected laminar regime analytically, solved the model across four progressively refined grids, and compared velocity behavior at x = 1 m and x = 2 m. The numerical results were then validated against the Blasius flat plate solution rather than relying on contour agreement alone.</p>
         </div>
       </div>
 
       <div class="ansys-stats">
         <div><span>Domain</span><strong>2 m × 1 m</strong></div>
-        <div><span>Free-stream velocity</span><strong>0.5 m/s</strong></div>
+        <div><span>Free stream velocity</span><strong>0.5 m/s</strong></div>
         <div><span>Grid study</span><strong>50×60 → 300×360</strong></div>
         <div><span>Validation</span><strong>Blasius solution</strong></div>
       </div>
@@ -38,7 +38,7 @@ permalink: /projects/ansys/
       <div class="ansys-calcs">
         <div class="ansys-calcs-header">
           <div><p class="ansys-label">Analytical Foundation</p><h3>Physics used to check the CFD model</h3></div>
-          <p>The hand calculations establish the correct flow regime and provide a quantitative reference for boundary-layer thickness at the same locations extracted from Fluent.</p>
+          <p>The hand calculations establish the correct flow regime and provide a quantitative reference for boundary layer thickness at the same locations extracted from Fluent.</p>
         </div>
         <div class="ansys-calc-grid">
           <div class="ansys-calc-card">
@@ -59,19 +59,19 @@ permalink: /projects/ansys/
       </div>
 
       <div class="ansys-feature-grid">
-        <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/boundary-layer-mesh.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/boundary-layer-mesh.png' | relative_url }}" alt="Biased computational mesh for flat plate boundary layer simulation"></a><figcaption><strong>Mesh Strategy.</strong> Wall-biased cells concentrate resolution where the boundary-layer velocity gradient is largest.</figcaption></figure>
-        <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/velocity-magnitude-contour.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/velocity-magnitude-contour.png' | relative_url }}" alt="Velocity magnitude contour for flat plate boundary layer"></a><figcaption><strong>Flow Field.</strong> Velocity magnitude contour showing the developing low-speed boundary layer and its downstream growth.</figcaption></figure>
+        <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/boundary-layer-mesh.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/boundary-layer-mesh.png' | relative_url }}" alt="Biased computational mesh for flat plate boundary layer simulation"></a><figcaption><strong>Mesh Strategy.</strong> Wall biased cells concentrate resolution where the boundary layer velocity gradient is largest.</figcaption></figure>
+        <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/velocity-magnitude-contour.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/velocity-magnitude-contour.png' | relative_url }}" alt="Velocity magnitude contour for flat plate boundary layer"></a><figcaption><strong>Flow Field.</strong> Velocity magnitude contour showing the developing low speed boundary layer and its downstream growth.</figcaption></figure>
       </div>
 
       <div class="ansys-gallery ansys-project-gallery">
         <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/x-velocity-grid-convergence.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/x-velocity-grid-convergence.png' | relative_url }}" alt="X velocity grid convergence plot"></a></div><figcaption><h3>Mesh Convergence</h3><p>Streamwise velocity across four grid resolutions demonstrates decreasing sensitivity to refinement.</p></figcaption></figure>
-        <figure class="ansys-card ansys-card-emphasis"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/analytical-vs-cfd.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/analytical-vs-cfd.png' | relative_url }}" alt="Analytical Blasius solution compared with CFD results"></a></div><figcaption><h3>Analytical Validation</h3><p>Finest-grid Fluent profiles compared directly with the analytical Blasius solution.</p></figcaption></figure>
+        <figure class="ansys-card ansys-card-emphasis"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/analytical-vs-cfd.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/analytical-vs-cfd.png' | relative_url }}" alt="Analytical Blasius solution compared with CFD results"></a></div><figcaption><h3>Analytical Validation</h3><p>Finest grid Fluent profiles compared directly with the analytical Blasius solution.</p></figcaption></figure>
       </div>
 
       <div class="ansys-results-box">
         <p class="ansys-label">Key Result</p>
-        <h3>Captured the correct boundary-layer physics and quantified the model error</h3>
-        <p>The CFD solution reproduced the expected profile shape and downstream growth. Using the 99% free-stream velocity criterion, it predicted thicknesses of 20.79 mm and 29.14 mm at x = 1 m and x = 2 m, compared with Blasius values of 27.55 mm and 38.97 mm.</p>
+        <h3>Captured the correct boundary layer physics and quantified the model error</h3>
+        <p>The CFD solution reproduced the expected profile shape and downstream growth. Using the 99% free stream velocity criterion, it predicted thicknesses of 20.79 mm and 29.14 mm at x = 1 m and x = 2 m, compared with Blasius values of 27.55 mm and 38.97 mm.</p>
       </div>
     </div>
   </section>
@@ -86,7 +86,7 @@ permalink: /projects/ansys/
         </div>
         <div class="ansys-project-copy">
           <p>Modeled laminar internal flow and thermal development through a 3 m long, 0.2 m diameter pipe with a 2 m/s inlet velocity, 300 K inlet temperature, and 400 K constant wall temperature. The model was designed to capture both hydrodynamic development and the evolving thermal boundary layer.</p>
-          <p>Used closed-form pipe-flow and heat-transfer relations as benchmarks, then repeated the Fluent solution on four meshes to check grid sensitivity. Validation was performed independently through the outlet velocity profile, outlet temperature, and fully developed Nusselt number.</p>
+          <p>Used closed form pipe flow and heat transfer relations as benchmarks, then repeated the Fluent solution on four meshes to check grid sensitivity. Validation was performed independently through the outlet velocity profile, outlet temperature, and fully developed Nusselt number.</p>
         </div>
       </div>
 
@@ -99,8 +99,8 @@ permalink: /projects/ansys/
 
       <div class="ansys-calcs">
         <div class="ansys-calcs-header">
-          <div><p class="ansys-label">Analytical Foundation</p><h3>Closed-form checks of flow and heat transfer</h3></div>
-          <p>The calculations establish when the flow should become developed, define the expected parabolic velocity profile, and provide theoretical heat-transfer quantities for comparison with CFD.</p>
+          <div><p class="ansys-label">Analytical Foundation</p><h3>Closed form checks of flow and heat transfer</h3></div>
+          <p>The calculations establish when the flow should become developed, define the expected parabolic velocity profile, and provide theoretical heat transfer quantities for comparison with CFD.</p>
         </div>
         <div class="ansys-calc-grid">
           <div class="ansys-calc-card">
@@ -122,13 +122,13 @@ permalink: /projects/ansys/
       </div>
 
       <div class="ansys-feature-grid">
-        <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/pipe-mesh.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/pipe-mesh.png' | relative_url }}" alt="Structured computational mesh for heated pipe"></a><figcaption><strong>Model &amp; Mesh.</strong> Structured two-dimensional grid used for the internal-flow simulation.</figcaption></figure>
+        <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/pipe-mesh.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/pipe-mesh.png' | relative_url }}" alt="Structured computational mesh for heated pipe"></a><figcaption><strong>Model &amp; Mesh.</strong> Structured two dimensional grid used for the internal flow simulation.</figcaption></figure>
         <figure class="ansys-figure ansys-figure-wide"><a href="{{ '/assets/images/ansys/static-temperature-contour.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/static-temperature-contour.png' | relative_url }}" alt="Static temperature contour in heated pipe"></a><figcaption><strong>Thermal Development.</strong> Fluid heats from 300 K as the thermal boundary layer develops against the 400 K wall.</figcaption></figure>
       </div>
 
       <div class="ansys-gallery ansys-project-gallery">
         <figure class="ansys-card ansys-card-emphasis"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/theoretical-vs-cfd-velocity.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/theoretical-vs-cfd-velocity.png' | relative_url }}" alt="Theoretical and CFD exit velocity profiles"></a></div><figcaption><h3>Velocity Validation</h3><p>Computed outlet velocity nearly overlaps the fully developed analytical parabolic profile.</p></figcaption></figure>
-        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/average-temperature-along-pipe.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/average-temperature-along-pipe.png' | relative_url }}" alt="Average temperature along heated pipe"></a></div><figcaption><h3>Bulk Temperature Development</h3><p>Mass-weighted average temperature rises from 300 K at the inlet to approximately 374.57 K at the outlet.</p></figcaption></figure>
+        <figure class="ansys-card"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/average-temperature-along-pipe.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/average-temperature-along-pipe.png' | relative_url }}" alt="Average temperature along heated pipe"></a></div><figcaption><h3>Bulk Temperature Development</h3><p>Mass weighted average temperature rises from 300 K at the inlet to approximately 374.57 K at the outlet.</p></figcaption></figure>
         <figure class="ansys-card ansys-card-emphasis"><div class="ansys-card-media"><a href="{{ '/assets/images/ansys/nusselt-number-validation.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/ansys/nusselt-number-validation.png' | relative_url }}" alt="Nusselt number validation"></a></div><figcaption><h3>Nusselt Validation</h3><p>The 50×200 grid predicts Nu<sub>D</sub> = 3.6595 versus 3.6600 theoretical, a 0.01% difference.</p></figcaption></figure>
       </div>
 
@@ -144,7 +144,7 @@ permalink: /projects/ansys/
     <div class="ansys-shell">
       <p class="ansys-label">Project 03</p>
       <h2>Compressible Airfoil CFD coming next</h2>
-      <p>The next study will follow the same format: only the highest-value Mach-regime, shock, aerodynamic, and compressibility results.</p>
+      <p>The next study will follow the same format: only the highest value Mach regime, shock, aerodynamic, and compressibility results.</p>
     </div>
   </section>
 </div>
