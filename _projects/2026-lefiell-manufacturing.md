@@ -3,7 +3,7 @@ layout: lefiell
 title: "LeFiell Manufacturing"
 excerpt: "Manufacturing engineering internship focused on aerospace process planning, tooling, inspection, reverse engineering, and production work."
 permalink: /projects/lefiell-manufacturing/
-image: /assets/images/lefiell/lefiell-card.svg
+image: /assets/images/lefiell/lefiell-cnc-tubular-machining.png
 ---
 
 <div class="lf-page">
@@ -14,8 +14,15 @@ image: /assets/images/lefiell/lefiell-card.svg
         <p class="lf-location">Santa Fe Springs, California</p>
       </div>
 
-      <h1>LeFiell Manufacturing</h1>
-      <p class="lf-company-line">LeFiell designs and manufactures precision metallic tubular parts and assemblies for commercial aircraft, aerospace, defense, and industrial applications.</p>
+      <div class="lf-brand-row">
+        <div class="lf-brand-copy">
+          <h1>LeFiell Manufacturing</h1>
+          <p class="lf-company-line">LeFiell designs and manufactures precision metallic tubular parts and assemblies for commercial aircraft, aerospace, defense, and industrial applications.</p>
+        </div>
+        <div class="lf-logo-wrap">
+          <img src="{{ '/assets/images/lefiell/lefiell-logo.png' | relative_url }}" alt="LeFiell Manufacturing logo">
+        </div>
+      </div>
 
       <div class="lf-skills" aria-label="Relevant skills">
         <span>Autodesk Inventor</span>
@@ -31,6 +38,11 @@ image: /assets/images/lefiell/lefiell-card.svg
         <span>Inspection Tooling</span>
         <span>Reverse Engineering</span>
       </div>
+
+      <figure class="lf-hero-image">
+        <img src="{{ '/assets/images/lefiell/lefiell-cnc-tubular-machining.png' | relative_url }}" alt="LeFiell manufacturing equipment with tubular components">
+        <figcaption>Manufacturing environment at LeFiell.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -50,6 +62,10 @@ image: /assets/images/lefiell/lefiell-card.svg
           <p>I developed Autodesk Inventor 3D models and process drawings for five tubular components, translating customer drawings into machining operation sequences, intermediate part geometry, datum schemes, fixturing and workholding requirements, and GD&amp;T per ASME Y14.5.</p>
           <p>The most important part of this work was learning to design the manufacturing sequence, not just the final part. Each operation had to leave the next setup with usable locating features, practical tool access, and dimensions that could be inspected during production. All five parts were released to production.</p>
         </div>
+        <figure class="lf-story-image">
+          <img src="{{ '/assets/images/lefiell/lefiell-formed-tubular-components.png' | relative_url }}" alt="Representative tubular components manufactured by LeFiell">
+          <figcaption>Representative LeFiell tubular manufacturing.</figcaption>
+        </figure>
       </article>
 
       <div class="lf-story-grid">
@@ -63,7 +79,7 @@ image: /assets/images/lefiell/lefiell-card.svg
           </div>
         </article>
 
-        <article class="lf-story">
+        <article class="lf-story lf-story-with-image">
           <div class="lf-story-index">03</div>
           <div class="lf-story-main">
             <p class="lf-story-kicker">Inspection Design</p>
@@ -71,6 +87,10 @@ image: /assets/images/lefiell/lefiell-card.svg
             <p>I created a depth gauge to verify the internal radius tangent point location on three tubular parts with different bore depths. The design used axially spaced gauging features so a single tool could replace three separate inspection gauges.</p>
             <p>The project pushed me to think about inspection from the operator's perspective: the gauge had to be simple, repeatable, and directly tied to the feature that mattered on the drawing.</p>
           </div>
+          <figure class="lf-card-image">
+            <img src="{{ '/assets/images/lefiell/lefiell-gundrill-machine.png' | relative_url }}" alt="LeFiell gundrilling equipment">
+            <figcaption>Gundrilling equipment used in LeFiell's tubular manufacturing operations.</figcaption>
+          </figure>
         </article>
       </div>
 
