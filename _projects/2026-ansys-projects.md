@@ -10,7 +10,6 @@ permalink: /projects/ansys/
     <div class="ansys-shell">
       <p class="ansys-kicker">ANSYS Fluent · Computational Fluid Dynamics</p>
       <h1 class="ansys-title">ANSYS / CFD Projects</h1>
-      <p class="ansys-subtitle">Selected CFD studies focused on physical modeling, mesh quality, validation, and the engineering conclusions that matter most.</p>
     </div>
   </section>
 
@@ -71,7 +70,6 @@ permalink: /projects/ansys/
       </div>
 
       <div class="ansys-results-box">
-        <p class="ansys-label">Key Result</p>
         <h3>Compressibility changed the predicted aerodynamic loading dramatically</h3>
         <p>At Mach 1.3, the compressible model predicted C<sub>D</sub> = 0.14135 and 16,931.7 N of drag, compared with C<sub>D</sub> = 0.05542 and 6,910.8 N from the incompressible model. The compressible prediction was about 2.45 times larger, showing why the correct flow model is essential in the supersonic regime.</p>
       </div>
@@ -135,7 +133,6 @@ permalink: /projects/ansys/
       </div>
 
       <div class="ansys-results-box">
-        <p class="ansys-label">Key Result</p>
         <h3>Verified the CFD solution through independent fluid and thermal benchmarks</h3>
         <p>The model matched the expected parabolic outlet velocity profile, captured the downstream temperature rise, and converged to the theoretical fully developed Nusselt number. Across all four grids, exit Nusselt values remained within approximately 1.1% of theory.</p>
       </div>
@@ -197,7 +194,6 @@ permalink: /projects/ansys/
       </div>
 
       <div class="ansys-results-box">
-        <p class="ansys-label">Key Result</p>
         <h3>Captured the correct boundary layer physics and quantified the model error</h3>
         <p>The CFD solution reproduced the expected profile shape and downstream growth. Using the 99% free stream velocity criterion, it predicted thicknesses of 20.79 mm and 29.14 mm at x = 1 m and x = 2 m, compared with Blasius values of 27.55 mm and 38.97 mm.</p>
       </div>
