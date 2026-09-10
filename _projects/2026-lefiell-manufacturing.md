@@ -9,28 +9,27 @@ image: /assets/images/lefiell/lefiell-card.svg
 <div class="lf-page">
   <section class="lf-hero">
     <div class="lf-shell">
-      <p class="lf-eyebrow">Manufacturing Engineering Intern · Summer 2026</p>
+      <div class="lf-hero-topline">
+        <p class="lf-eyebrow">Manufacturing Engineering Intern · Summer 2026</p>
+        <p class="lf-location">Santa Fe Springs, California</p>
+      </div>
+
       <h1>LeFiell Manufacturing</h1>
-      <p class="lf-hero-subtitle">A summer working on aerospace manufacturing problems where CAD, drawings, tooling, machining strategy, inspection, and production all had to connect.</p>
-      <div class="lf-hero-meta">
-        <span>Santa Fe Springs, California</span>
+      <p class="lf-company-line">LeFiell designs and manufactures precision metallic tubular parts and assemblies for commercial aircraft, aerospace, defense, and industrial applications.</p>
+
+      <div class="lf-skills" aria-label="Relevant skills">
         <span>Autodesk Inventor</span>
         <span>CATIA V5</span>
         <span>GD&amp;T</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="lf-reflection lf-section">
-    <div class="lf-shell lf-reading-grid">
-      <div class="lf-section-side">
-        <p class="lf-section-label">Reflection</p>
-        <h2>Learning what it takes to move a design into production</h2>
-      </div>
-      <div class="lf-prose">
-        <p>Before this internship, most of my CAD experience was centered on defining the final part. At LeFiell, I started thinking much more about everything that has to happen before a finished part can exist: which features are created in each operation, what datums are available at that point in the process, how the part will be held, what a cutter can actually reach, and how the result will be inspected.</p>
-        <p>That changed the way I think about mechanical design. A model can be dimensionally correct and still create problems on the shop floor. The manufacturing engineer has to translate design intent into a sequence that machinists, programmers, and inspectors can actually use. Working through that translation was the most valuable part of the internship for me.</p>
-        <p>I also learned how much iteration happens between engineering and production. Tooling that looked reasonable in CAD still had to be checked for thread engagement, drilling clearance, access, and practical use. Conversations with CNC programmers often changed the design for the better because they brought in constraints that were not obvious from the model alone.</p>
+        <span>ASME Y14.5</span>
+        <span>DFMA</span>
+        <span>Tolerance Analysis</span>
+        <span>CNC Machining</span>
+        <span>Mill &amp; Lathe</span>
+        <span>Process Planning</span>
+        <span>Fixturing &amp; Workholding</span>
+        <span>Inspection Tooling</span>
+        <span>Reverse Engineering</span>
       </div>
     </div>
   </section>
@@ -39,56 +38,68 @@ image: /assets/images/lefiell/lefiell-card.svg
     <div class="lf-shell">
       <div class="lf-section-intro">
         <p class="lf-section-label">Selected Work</p>
-        <h2>The projects that shaped the experience</h2>
+        <h2>Manufacturing engineering in a production environment</h2>
+        <p class="lf-section-summary">My work focused on turning customer drawings and CAD into practical manufacturing plans, tooling, and verification methods that could support production.</p>
       </div>
 
-      <article class="lf-story">
-        <div class="lf-story-title">
-          <span>01</span>
-          <h3>Process planning for Boeing landing gear components</h3>
+      <article class="lf-story lf-story-featured">
+        <div class="lf-story-index">01</div>
+        <div class="lf-story-main">
+          <p class="lf-story-kicker">Process Planning</p>
+          <h3>Boeing main landing gear tubular components</h3>
+          <p>I developed Autodesk Inventor 3D models and process drawings for five tubular components, translating customer drawings into machining operation sequences, intermediate part geometry, datum schemes, fixturing and workholding requirements, and GD&amp;T per ASME Y14.5.</p>
+          <p>The most important part of this work was learning to design the manufacturing sequence, not just the final part. Each operation had to leave the next setup with usable locating features, practical tool access, and dimensions that could be inspected during production. All five parts were released to production.</p>
         </div>
-        <div class="lf-story-copy">
-          <p>I developed Autodesk Inventor models and process drawings for five main landing gear tubular components, translating customer drawings into machining operation sequences, intermediate part geometry, datum schemes, fixturing and workholding requirements, GD&amp;T, and in process dimensions.</p>
-          <p>The part of this work that mattered most was learning to think in intermediate states rather than only the final geometry. Each operation had to leave the next setup with usable locating features and enough information for machining and inspection. All five parts were ultimately released to production.</p>
-        </div>
-      </article>
-
-      <article class="lf-story">
-        <div class="lf-story-title">
-          <span>02</span>
-          <h3>Custom tooling and inspection design</h3>
-        </div>
-        <div class="lf-story-copy">
-          <p>I designed ten custom thread plugs for right hand and left hand UNJF 3B threads per AS8879. I used Inventor assemblies to check thread engagement and drilling clearance, then iterated the tooling geometry with CNC programmers before manufacturing.</p>
-          <p>I also created a gundrill depth gauge for three tubular parts that needed the location of an internal radius tangent point verified at different bore depths. Instead of using three separate inspection gauges, I designed one gauge with axially spaced gauging features so the same tool could perform all three checks.</p>
-          <p>This work made tooling feel less like an accessory to the part and more like a design problem of its own. The tool had to be simple to use, physically compatible with the machining process, and able to verify exactly the feature the drawing cared about.</p>
+        <div class="lf-story-aside">
+          <span>What this taught me</span>
+          <p>Manufacturing drawings have to communicate how a part will actually be made, held, located, and checked at every stage of the process.</p>
         </div>
       </article>
 
-      <article class="lf-story">
-        <div class="lf-story-title">
-          <span>03</span>
-          <h3>Reverse engineering and model verification</h3>
-        </div>
-        <div class="lf-story-copy">
-          <p>I reverse engineered a main landing gear door forward stop fitting from a physical component and a legacy Boeing hand drawing. Using caliper measurements, I reconstructed the geometry and created the Autodesk Inventor model needed for manufacturing.</p>
-          <p>On other work, I cross checked CATIA V5 customer models against Inventor models and engineering drawings for sonobuoy launch components, verifying dimensions, hole locations, and feature geometry before production.</p>
-          <p>Those tasks reinforced the importance of treating CAD as an engineering record rather than just a visual model. Small inconsistencies between the physical part, customer model, and drawing can become real production problems if they are not resolved before manufacturing begins.</p>
-        </div>
-      </article>
+      <div class="lf-story-grid">
+        <article class="lf-story">
+          <div class="lf-story-index">02</div>
+          <div class="lf-story-main">
+            <p class="lf-story-kicker">Tooling Design</p>
+            <h3>Custom thread plug tools</h3>
+            <p>I designed ten custom thread plugs for right hand and left hand UNJF 3B threads per AS8879. I created Inventor assemblies to verify thread engagement and drilling clearance, then iterated the tooling geometry with CNC programmers before manufacturing.</p>
+            <p>This gave me experience designing around the actual machining operation rather than treating tooling as an isolated CAD exercise.</p>
+          </div>
+        </article>
+
+        <article class="lf-story">
+          <div class="lf-story-index">03</div>
+          <div class="lf-story-main">
+            <p class="lf-story-kicker">Inspection Design</p>
+            <h3>Gundrill depth gauge</h3>
+            <p>I created a depth gauge to verify the internal radius tangent point location on three tubular parts with different bore depths. The design used axially spaced gauging features so a single tool could replace three separate inspection gauges.</p>
+            <p>The project pushed me to think about inspection from the operator's perspective: the gauge had to be simple, repeatable, and directly tied to the feature that mattered on the drawing.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="lf-secondary-work">
+        <article>
+          <p class="lf-story-kicker">Reverse Engineering</p>
+          <h3>Main landing gear door forward stop fitting</h3>
+          <p>Reconstructed part geometry from a physical component and a legacy Boeing hand drawing using caliper measurements, then built the Autodesk Inventor model needed for manufacturing.</p>
+        </article>
+
+        <article>
+          <p class="lf-story-kicker">Model Verification</p>
+          <h3>Sonobuoy launch components</h3>
+          <p>Cross checked CATIA V5 customer models against Autodesk Inventor models and engineering drawings, verifying dimensional accuracy, hole locations, and feature geometry before production.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section class="lf-section lf-closing">
-    <div class="lf-shell lf-reading-grid">
-      <div class="lf-section-side">
-        <p class="lf-section-label">What I Took From It</p>
-        <h2>Manufacturing became part of how I design</h2>
-      </div>
-      <div class="lf-prose">
-        <p>The biggest takeaway from the summer was that manufacturing decisions are design decisions. Datum selection, workholding, tool access, operation order, inspection strategy, and communication with the shop all influence whether a design can be produced reliably.</p>
-        <p>I came away more comfortable moving between drawings, CAD, tooling, and the shop floor, but more importantly I started evaluating my own designs differently. I now think earlier about how a part will be made, what needs to be measured, what can realistically be held or reached, and what information another engineer or machinist will need to carry the design forward.</p>
-      </div>
+  <section class="lf-section lf-reflection-bottom">
+    <div class="lf-shell lf-reflection-card">
+      <p class="lf-section-label">Experience Reflection</p>
+      <h2>Designing with manufacturing in mind</h2>
+      <p>The internship changed how I approach mechanical design because I was working much closer to the point where drawings and CAD become hardware. I became more conscious of setup sequence, datum selection, workholding, cutter access, inspection, and the communication between engineering and the shop floor.</p>
+      <p>Working with CNC programmers also reinforced that good engineering is iterative. A design that works in CAD may still need to change once machining access, tooling, inspection, and operator use are considered. That perspective now carries into how I design parts and assemblies outside of manufacturing engineering.</p>
     </div>
   </section>
 </div>
