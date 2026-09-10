@@ -35,7 +35,7 @@
 }
 
 .cev-shell {
-  width: min(1500px, calc(100% - 32px));
+  width: min(1600px, calc(100% - 32px));
   margin: 0 auto;
 }
 
@@ -118,7 +118,7 @@
 
 .cev-gallery-layout {
   display: grid;
-  grid-template-columns: minmax(235px, 0.5fr) minmax(0, 2.75fr);
+  grid-template-columns: minmax(320px, 0.72fr) minmax(0, 2.75fr);
   gap: 24px;
   align-items: start;
 }
@@ -231,7 +231,7 @@
 
 @media (max-width: 1180px) {
   .cev-gallery-layout {
-    grid-template-columns: minmax(230px, 0.68fr) minmax(0, 2.32fr);
+    grid-template-columns: minmax(280px, 0.86fr) minmax(0, 2.32fr);
   }
 
   .cev-collage {
@@ -241,7 +241,7 @@
 
 @media (max-width: 980px) {
   .cev-shell {
-    width: min(100% - 28px, 1500px);
+    width: min(100% - 28px, 1600px);
   }
 
   .cev-gallery-layout {
