@@ -124,9 +124,9 @@ image: /assets/images/lefiell/lefiell-cnc-tubular-machining.png
   <section class="lf-section lf-reflection-bottom">
     <div class="lf-shell lf-reflection-card">
       <p class="lf-section-label">Experience Reflection</p>
-      <h2>Designing with the production path in mind</h2>
-      <p>LeFiell gave me experience thinking about a part beyond its final CAD geometry. Process drawings, tooling, inspection, and conversations with CNC programmers forced me to work through how a component would move from one operation to the next: what geometry had to exist at each stage, how the part would be held and located, which features could serve as datums, and how critical dimensions would be verified before release.</p>
-      <p>That made manufacturability much more concrete for me. I now approach design with the full production path in mind, asking earlier whether a part can be set up, machined, inspected, and repeated reliably rather than only whether the final geometry is correct.</p>
+      <h2>Designing beyond the final geometry</h2>
+      <p>A drawing can be dimensionally correct and still create a poor manufacturing process. That was the biggest lesson I took from LeFiell. Building process drawings and tooling for aerospace components forced me to think several operations ahead: which surfaces would still exist after material was removed, what could be used to locate the part, how it would be clamped without blocking tool access, and when a critical dimension could actually be inspected. The design problem was no longer just defining the final geometry; it was creating a sequence that could produce that geometry reliably.</p>
+      <p>Working directly with CNC programmers made that lesson practical. Their feedback exposed constraints that are easy to miss in CAD, and each revision had to reconcile design intent with machine access, fixturing, inspection, and repeatability. I left the internship with a much stronger production mindset: when I model a part now, I think about how it will be made, located, measured, and reproduced before I consider the design finished.</p>
     </div>
   </section>
 </div>
