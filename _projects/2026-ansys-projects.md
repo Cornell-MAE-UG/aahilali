@@ -3,6 +3,7 @@ layout: ansys
 title: "ANSYS / CFD Projects"
 excerpt: "Computational fluid dynamics projects using ANSYS Fluent, mesh refinement, analytical validation, and engineering interpretation."
 permalink: /projects/ansys/
+image: /assets/images/ansys/mach-number-1-3.png
 ---
 
 <div class="ansys-page">
