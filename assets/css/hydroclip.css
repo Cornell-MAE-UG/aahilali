@@ -1,0 +1,243 @@
+/* HydroClip design for manufacturing project */
+
+.hydroclip-body {
+  background: #071018;
+  color: #edf4f7;
+}
+
+.hydroclip-body .site-header,
+.hydroclip-body .site-footer {
+  background: #071018;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.hydroclip-body .navbar-brand,
+.hydroclip-body .site-header .nav-link {
+  color: #f4f7f8 !important;
+}
+
+.hc-page {
+  --hc-bg: #071018;
+  --hc-panel: #0d1821;
+  --hc-line: rgba(255, 255, 255, 0.10);
+  --hc-text: #edf4f7;
+  --hc-muted: #a7b5bd;
+  --hc-soft: #788993;
+  --hc-accent: #51b8b2;
+  min-height: 100vh;
+  padding-bottom: 90px;
+  background:
+    radial-gradient(circle at 88% 0%, rgba(54, 125, 137, 0.15), transparent 28%),
+    linear-gradient(180deg, #071018 0%, #08131b 100%);
+  color: var(--hc-text);
+  font-family: Inter, Arial, sans-serif;
+}
+
+.hc-shell {
+  width: min(1440px, calc(100% - 36px));
+  margin: 0 auto;
+}
+
+.hc-hero {
+  padding: 64px 0 42px;
+  border-bottom: 1px solid var(--hc-line);
+}
+
+.hc-eyebrow,
+.hc-kicker {
+  margin: 0 0 10px;
+  color: var(--hc-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.hc-title {
+  max-width: 850px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.8rem, 5.8vw, 5rem);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.hc-subtitle {
+  max-width: 850px;
+  margin: 18px 0 0;
+  color: #b9c6cc;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.hc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.hc-tags span {
+  padding: 7px 11px;
+  border: 1px solid var(--hc-line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #c8d3d8;
+  font-size: 0.73rem;
+  line-height: 1;
+}
+
+.hc-main {
+  padding: 54px 0 0;
+}
+
+.hc-project-layout {
+  display: grid;
+  grid-template-columns: minmax(420px, 0.9fr) minmax(0, 1.25fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.hc-copy {
+  padding-right: 6px;
+}
+
+.hc-copy h2 {
+  margin: 0 0 16px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.hc-copy h3 {
+  margin: 30px 0 9px;
+  color: #f2f7f8;
+  font-size: 1.02rem;
+  font-weight: 650;
+}
+
+.hc-copy p {
+  margin: 0 0 17px;
+  color: var(--hc-muted);
+  font-size: 0.94rem;
+  line-height: 1.74;
+}
+
+.hc-gallery-wrap {
+  min-width: 0;
+}
+
+.hc-gallery-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 13px;
+}
+
+.hc-gallery-title {
+  margin: 0;
+  color: #dce6ea;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.hc-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.hc-gallery-placeholder {
+  min-height: 250px;
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.hc-gallery-placeholder-large {
+  grid-column: span 2;
+  min-height: 330px;
+}
+
+.hc-impact {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 52px;
+  padding-top: 28px;
+  border-top: 1px solid var(--hc-line);
+}
+
+.hc-impact article {
+  padding: 20px 20px 18px;
+  border: 1px solid var(--hc-line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.hc-impact strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #f4f8f9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.hc-impact span {
+  color: var(--hc-muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 1080px) {
+  .hc-project-layout {
+    grid-template-columns: minmax(350px, 0.9fr) minmax(0, 1.1fr);
+    gap: 34px;
+  }
+
+  .hc-gallery-placeholder,
+  .hc-gallery-placeholder-large {
+    min-height: 230px;
+  }
+}
+
+@media (max-width: 860px) {
+  .hc-project-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hc-copy {
+    max-width: 880px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hc-shell {
+    width: min(100% - 26px, 1440px);
+  }
+
+  .hc-hero {
+    padding-top: 48px;
+  }
+
+  .hc-gallery,
+  .hc-impact {
+    grid-template-columns: 1fr;
+  }
+
+  .hc-gallery-placeholder-large {
+    grid-column: auto;
+  }
+
+  .hc-gallery-placeholder,
+  .hc-gallery-placeholder-large {
+    min-height: 220px;
+  }
+}
