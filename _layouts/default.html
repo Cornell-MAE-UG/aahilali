@@ -54,9 +54,14 @@
   <link
     rel="stylesheet"
     href="{{ '/assets/css/lefiell.css' | relative_url }}?v={{ site.github.build_revision }}">
+
+  <!-- HydroClip project styling -->
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/hydroclip.css' | relative_url }}?v={{ site.github.build_revision }}">
 </head>
 
-<body class="{% if page.layout == 'cev' %}cev-body{% elsif page.layout == 'mechatronics' %}mechatronics-body{% elsif page.layout == 'ansys' %}ansys-body{% elsif page.layout == 'lefiell' %}lefiell-body{% endif %}">
+<body class="{% if page.layout == 'cev' %}cev-body{% elsif page.layout == 'mechatronics' %}mechatronics-body{% elsif page.layout == 'ansys' %}ansys-body{% elsif page.layout == 'lefiell' %}lefiell-body{% elsif page.layout == 'hydroclip' %}hydroclip-body{% endif %}">
 
   <header class="site-header">
     <nav class="navbar navbar-expand-lg navbar-dark">
