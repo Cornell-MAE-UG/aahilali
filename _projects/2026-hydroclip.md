@@ -60,21 +60,6 @@ permalink: /projects/hydroclip/
           </div>
         </div>
       </div>
-
-      <div class="hc-impact">
-        <article>
-          <strong>Fewer molded parts</strong>
-          <span>Combined the mounting plate and receiver to remove a mold and reduce assembly work.</span>
-        </article>
-        <article>
-          <strong>Process specific geometry</strong>
-          <span>Split the clip between injection molding and laser cutting to simplify the mold and preserve the functional spring geometry.</span>
-        </article>
-        <article>
-          <strong>Error resistant assembly</strong>
-          <span>Added alignment, spring location, and receiver locating features to make assembly more repeatable.</span>
-        </article>
-      </div>
     </div>
   </section>
 </div>
