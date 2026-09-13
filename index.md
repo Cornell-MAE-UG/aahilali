@@ -98,7 +98,9 @@ title: Home
           class="home-project-card{% if project.featured_home %} featured-project{% endif %}"
           href="{{ project.url | relative_url }}">
 
-          {% if project.image %}
+          {% if project.url == '/projects/ansys/' %}
+            <img class="home-project-image" src="{{ '/assets/images/ansys/pressure-mach-1-3-compressible.png' | relative_url }}" alt="{{ project.title }}">
+          {% elsif project.image %}
             {% assign image_name = project.image %}
             {% assign first_four = image_name | slice: 0, 4 %}
             {% assign first_character = image_name | slice: 0, 1 %}
