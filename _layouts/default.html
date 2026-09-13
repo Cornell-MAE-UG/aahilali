@@ -111,19 +111,15 @@
                 <a class="project-menu-link" href="{{ '/projects/ansys/' | relative_url }}">
                   ANSYS / CFD Projects
                 </a>
-
-                {% assign navigation_projects = site.projects | sort: "path" | reverse %}
-                {% for project in navigation_projects %}
-                  {% unless project.url == '/projects/cornell-electric-vehicles/' %}
-                    {% unless project.url == '/projects/lefiell-manufacturing/' %}
-                      {% unless project.url == '/projects/ansys/' %}
-                        <a class="project-menu-link" href="{{ project.url | relative_url }}">
-                          {{ project.title }}
-                        </a>
-                      {% endunless %}
-                    {% endunless %}
-                  {% endunless %}
-                {% endfor %}
+                <a class="project-menu-link" href="{{ '/projects/hydroclip/' | relative_url }}">
+                  HydroClip
+                </a>
+                <a class="project-menu-link" href="{{ '/projects/fluid-mechanical-dissection/' | relative_url }}">
+                  Fluid Mechanical Dissection
+                </a>
+                <a class="project-menu-link" href="{{ '/projects/mechatronics/' | relative_url }}">
+                  Mechatronics
+                </a>
               </div>
             </li>
 
