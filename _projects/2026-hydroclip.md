@@ -59,68 +59,22 @@ image: /assets/images/hydroclip/hydroclip-spring-guide.png
         </div>
       </article>
 
-      <section class="hc-gallery-section" aria-labelledby="hc-gallery-title">
-        <div class="hc-gallery-heading">
-          <p class="hc-kicker">Project Gallery</p>
-          <h2 id="hc-gallery-title">CAD development, assembly features, and design refinement</h2>
-        </div>
-
-        <a class="hc-gallery-feature" href="{{ '/assets/images/hydroclip/hydroclip-spring-guide.png' | relative_url }}" target="_blank" rel="noopener">
-          <img src="{{ '/assets/images/hydroclip/hydroclip-spring-guide.png' | relative_url }}" alt="Complete HydroClip bottle holder assembly CAD" loading="lazy">
-        </a>
-
-        <div class="hc-collage" aria-label="HydroClip project image collage">
-          <a href="{{ '/assets/images/hydroclip/hydroclip-silicone-inlays.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-silicone-inlays.png' | relative_url }}" alt="HydroClip clamp render showing silicone grip inlays" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-t-junction.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-t-junction.png' | relative_url }}" alt="HydroClip clamp render from alternate angle" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-holder-assembly.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-holder-assembly.png' | relative_url }}" alt="Buckle assembly with circular alignment feature" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-buckle-arms.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-buckle-arms.png' | relative_url }}" alt="HydroClip molded channel geometry" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-alignment-ring.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-alignment-ring.png' | relative_url }}" alt="HydroClip buckle arm component" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-locating-tabs.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-locating-tabs.png' | relative_url }}" alt="Spring locating pocket in the HydroClip assembly" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-carbon-footprint.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-carbon-footprint.png' | relative_url }}" alt="Spring installed in the HydroClip spring locating pocket" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-assembly-start.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-assembly-start.png' | relative_url }}" alt="HydroClip locating features highlighted in CAD" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-holder-installation.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-holder-installation.png' | relative_url }}" alt="Close view of HydroClip locating tabs" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-silicone-inlays-alt.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-silicone-inlays-alt.png' | relative_url }}" alt="HydroClip upper hinge and pivot area" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-spring-guide-installed.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-spring-guide-installed.png' | relative_url }}" alt="HydroClip circular pivot pin feature" loading="lazy">
-          </a>
-
-          <a href="{{ '/assets/images/hydroclip/hydroclip-pivot-pin.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-pivot-pin.png' | relative_url }}" alt="Full vertical HydroClip assembly CAD" loading="lazy">
-          </a>
-
-          <a class="hc-collage-wide" href="{{ '/assets/images/hydroclip/hydroclip-prototype-redesign.png' | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ '/assets/images/hydroclip/hydroclip-prototype-redesign.png' | relative_url }}" alt="HydroClip carbon footprint results" loading="lazy">
-          </a>
+      <section class="hc-gallery-section" aria-label="HydroClip project images">
+        <div class="hc-collage">
+          <a href="{{ '/assets/images/hydroclip/hydroclip-spring-guide.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-spring-guide.png' | relative_url }}" alt="Complete HydroClip bottle holder assembly CAD" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-silicone-inlays.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-silicone-inlays.png' | relative_url }}" alt="HydroClip clamp render showing silicone grip inlays" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-t-junction.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-t-junction.png' | relative_url }}" alt="HydroClip clamp render from alternate angle" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-holder-assembly.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-holder-assembly.png' | relative_url }}" alt="Buckle assembly with circular alignment feature" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-buckle-arms.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-buckle-arms.png' | relative_url }}" alt="HydroClip molded channel geometry" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-alignment-ring.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-alignment-ring.png' | relative_url }}" alt="HydroClip buckle arm component" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-locating-tabs.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-locating-tabs.png' | relative_url }}" alt="Spring locating pocket in the HydroClip assembly" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-carbon-footprint.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-carbon-footprint.png' | relative_url }}" alt="Spring installed in the HydroClip spring locating pocket" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-assembly-start.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-assembly-start.png' | relative_url }}" alt="HydroClip locating features highlighted in CAD" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-holder-installation.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-holder-installation.png' | relative_url }}" alt="Close view of HydroClip locating tabs" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-silicone-inlays-alt.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-silicone-inlays-alt.png' | relative_url }}" alt="HydroClip upper hinge and pivot area" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-spring-guide-installed.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-spring-guide-installed.png' | relative_url }}" alt="HydroClip circular pivot pin feature" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-pivot-pin.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-pivot-pin.png' | relative_url }}" alt="Full vertical HydroClip assembly CAD" loading="lazy"></a>
+          <a href="{{ '/assets/images/hydroclip/hydroclip-prototype-redesign.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/hydroclip/hydroclip-prototype-redesign.png' | relative_url }}" alt="HydroClip carbon footprint results" loading="lazy"></a>
         </div>
       </section>
     </div>
