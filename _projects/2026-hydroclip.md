@@ -25,7 +25,6 @@ image: /assets/images/hydroclip/hydroclip-spring-guide.png
         <span>Design for Assembly</span>
         <span>Injection Molding</span>
         <span>Laser Cutting</span>
-        <span>Poka Yoke</span>
         <span>Material Selection</span>
         <span>Product Sustainability</span>
       </div>
@@ -51,7 +50,7 @@ image: /assets/images/hydroclip/hydroclip-spring-guide.png
 
           <section>
             <h3>Design for assembly</h3>
-            <p>The prototype exposed several opportunities for assembly error, especially where bonded parts had to be aligned manually. I added poka yoke features to make orientation and placement more repeatable. An alignment ring prevents the bottle holder from being installed upside down, a circular feature locates the internal spring, and six locating tabs position the receiver on the mounting plate.</p>
+            <p>The prototype exposed several opportunities for assembly error, especially where bonded parts had to be aligned manually. I added alignment and locating features to make orientation and placement more repeatable. An alignment ring prevents the bottle holder from being installed upside down, a circular feature locates the internal spring, and six locating tabs position the receiver on the mounting plate.</p>
 
             <h3>Sustainability and development</h3>
             <p>The sustainability model estimated a total footprint of 12.28 kg CO₂e, with distribution and assembly as the largest contributors. I also evaluated alternative materials and processes including recycled PET, PLA, thermoforming, and lighter recyclable packaging before recommending additional material testing, process trials, CAD refinement, and user testing prior to full scale manufacturing.</p>
