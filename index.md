@@ -16,7 +16,7 @@ title: Home
       <h1 class="home-name">Aahil Ali</h1>
 
       <p class="home-bio">
-        My name is Aahil Ali. I am a <strong>Mechanical Engineering</strong> student at <strong>Cornell University</strong> in the College of Engineering. I am passionate about mechanical design, analysis, manufacturing, testing, robotics, and hardware, and I enjoy taking ideas from early concepts through detailed design, prototyping, and validation. My experience has given me opportunities to work with CAD, machining, composites, simulation, and hands on mechanical systems. I am especially interested in the automotive and aerospace industries and in roles focused on product development and mechanical design. Please feel free to reach out to me at <a href="mailto:aaa387@cornell.edu">aaa387@cornell.edu</a>.
+        My name is Aahil Ali. I am a <strong>Mechanical Engineering</strong> student at <strong>Cornell University</strong> and expect to graduate in May 2027. I have experience in design, manufacturing, analysis, testing, and prototyping through internships, project teams, research, and teaching. I enjoy solving practical engineering problems and developing reliable mechanical products and systems from concept through production and validation. Please feel free to reach out to me at <a href="mailto:aaa387@cornell.edu">aaa387@cornell.edu</a>.
       </p>
 
       <div class="home-links">
