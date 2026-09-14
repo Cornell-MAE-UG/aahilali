@@ -110,18 +110,34 @@
 .hc-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 26px;
+  gap: 9px 10px;
+  max-width: 880px;
+  margin-top: 24px;
 }
 
 .hc-tags span {
-  padding: 7px 11px;
-  border: 1px solid var(--hc-line);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.025);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.02);
   color: #c8d3d8;
-  font-size: 0.73rem;
+  font-size: 0.69rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   line-height: 1;
+}
+
+.hc-tags span::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  flex: 0 0 5px;
+  border-radius: 50%;
+  background: var(--hc-accent);
+  opacity: 0.82;
 }
 
 .hc-main {
@@ -284,6 +300,14 @@
 
   .hc-subtitle {
     font-size: 1rem;
+  }
+
+  .hc-tags {
+    gap: 7px;
+  }
+
+  .hc-tags span {
+    font-size: 0.67rem;
   }
 
   .hc-collage {
