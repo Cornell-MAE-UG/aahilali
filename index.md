@@ -98,7 +98,7 @@ title: Home
               {% if project.url == '/projects/ansys/' %}
                 <img class="home-project-image" src="{{ '/assets/images/ansys/pressure-mach-1-3-compressible.png' | relative_url }}" alt="{{ project.title }}">
               {% elsif project.url == '/projects/fluid-mechanical-dissection/' %}
-                <img class="home-project-image home-project-image-fluid" src="{{ '/assets/images/fluid-mechanical-dissection.png' | relative_url }}" alt="{{ project.title }}">
+                <img class="home-project-image home-project-image-fluid" style="object-fit: contain; object-position: center; background: #c8c8c8; padding: 6px 0;" src="{{ '/assets/images/fluid-mechanical-dissection.png' | relative_url }}" alt="{{ project.title }}">
               {% elsif project.image %}
                 {% assign image_name = project.image %}
                 {% assign first_four = image_name | slice: 0, 4 %}
