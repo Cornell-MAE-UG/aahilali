@@ -55,23 +55,18 @@ title: Home
       <h2 class="home-section-heading">SKILLS</h2>
 
       <div class="skill-group">
-        <div class="skill-title">CAD & Engineering Software:</div>
-        <p class="skill-text">ADD SOFTWARE HERE</p>
+        <div class="skill-title">CAD Software:</div>
+        <p class="skill-text">Autodesk Inventor, Fusion 360, AutoCAD, SolidWorks, ANSYS Mechanical, ANSYS Fluent</p>
       </div>
 
       <div class="skill-group">
-        <div class="skill-title">Manufacturing:</div>
-        <p class="skill-text">ADD MANUFACTURING SKILLS HERE</p>
+        <div class="skill-title">Manufacturing Processes:</div>
+        <p class="skill-text">Manual Mill &amp; Lathe, CNC Machining, 3D Printing, Laser Cutting, Carbon Fiber (Vacuum Infusion, Wet Layup, Forged), Hand Tools</p>
       </div>
 
       <div class="skill-group">
-        <div class="skill-title">Programming & Technical Tools:</div>
-        <p class="skill-text">ADD PROGRAMMING AND TECHNICAL TOOLS HERE</p>
-      </div>
-
-      <div class="skill-group">
-        <div class="skill-title">Engineering:</div>
-        <p class="skill-text">ADD ENGINEERING SKILLS HERE</p>
+        <div class="skill-title">Programming Languages:</div>
+        <p class="skill-text">MATLAB, Python</p>
       </div>
     </div>
 
@@ -82,7 +77,7 @@ title: Home
         <li>Manufacturing Engineering</li>
         <li>Automotive Engineering</li>
         <li>Aerospace Engineering</li>
-        <li>Robotics & Hardware</li>
+        <li>Robotics &amp; Hardware</li>
       </ul>
     </div>
   </section>
