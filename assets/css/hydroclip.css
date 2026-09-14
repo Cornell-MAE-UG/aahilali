@@ -138,8 +138,7 @@
   border-bottom: 1px solid var(--hc-line);
 }
 
-.hc-copy h2,
-.hc-gallery-heading h2 {
+.hc-copy h2 {
   margin: 0 0 18px;
   font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(2.1rem, 3.2vw, 3.15rem);
@@ -193,57 +192,20 @@
 }
 
 .hc-gallery-section {
-  margin-top: 76px;
-  padding-top: 40px;
-  border-top: 1px solid var(--hc-line);
-}
-
-.hc-gallery-heading {
-  max-width: 810px;
-  margin-bottom: 28px;
-}
-
-.hc-gallery-heading h2 {
-  margin-bottom: 0;
-}
-
-.hc-gallery-feature {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 430px;
-  margin-bottom: 16px;
-  overflow: hidden;
-  border: 1px solid var(--hc-line-strong);
-  border-radius: 12px;
-  background:
-    linear-gradient(135deg, rgba(81, 184, 178, 0.045), transparent 42%),
-    #0b151d;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
-}
-
-.hc-gallery-feature img {
-  display: block;
-  width: 100%;
-  max-height: 640px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.hc-gallery-feature:hover img {
-  transform: scale(1.015);
+  margin-top: 64px;
 }
 
 .hc-collage {
-  columns: 3 300px;
-  column-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .hc-collage a {
-  display: block;
-  break-inside: avoid;
-  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border: 1px solid var(--hc-line);
   border-radius: 10px;
@@ -262,7 +224,8 @@
 .hc-collage img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   background: var(--hc-panel-2);
   transition: transform 0.28s ease;
 }
@@ -284,8 +247,8 @@
     border-top: 1px solid var(--hc-line);
   }
 
-  .hc-gallery-feature {
-    min-height: 330px;
+  .hc-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -303,20 +266,11 @@
   }
 
   .hc-gallery-section {
-    margin-top: 58px;
-  }
-
-  .hc-gallery-feature {
-    min-height: 250px;
+    margin-top: 48px;
   }
 
   .hc-collage {
-    columns: 2 220px;
-    column-gap: 12px;
-  }
-
-  .hc-collage a {
-    margin-bottom: 12px;
+    gap: 12px;
   }
 }
 
@@ -330,6 +284,6 @@
   }
 
   .hc-collage {
-    columns: 1;
+    grid-template-columns: 1fr;
   }
 }
