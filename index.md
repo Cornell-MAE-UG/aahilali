@@ -86,41 +86,43 @@ title: Home
     <h2 class="projects-title">PROJECTS</h2>
 
     <div class="projects-grid">
-      {% assign homepage_projects = site.projects | sort: "path" | reverse %}
+      {% assign ordered_project_urls = "/projects/cornell-electric-vehicles/|/projects/lefiell-manufacturing/|/projects/ansys/|/projects/hydroclip/|/projects/fluid-mechanical-dissection/" | split: "|" %}
 
-      {% for project in homepage_projects %}
-        {% unless project.url == '/projects/mechatronics/' or project.url == '/projects/heat-transfer/' %}
-          <a
-            class="home-project-card{% if project.featured_home %} featured-project{% endif %}"
-            href="{{ project.url | relative_url }}">
+      {% for project_url in ordered_project_urls %}
+        {% for project in site.projects %}
+          {% if project.url == project_url %}
+            <a
+              class="home-project-card{% if project.featured_home %} featured-project{% endif %}"
+              href="{{ project.url | relative_url }}">
 
-            {% if project.url == '/projects/ansys/' %}
-              <img class="home-project-image" src="{{ '/assets/images/ansys/pressure-mach-1-3-compressible.png' | relative_url }}" alt="{{ project.title }}">
-            {% elsif project.image %}
-              {% assign image_name = project.image %}
-              {% assign first_four = image_name | slice: 0, 4 %}
-              {% assign first_character = image_name | slice: 0, 1 %}
+              {% if project.url == '/projects/ansys/' %}
+                <img class="home-project-image" src="{{ '/assets/images/ansys/pressure-mach-1-3-compressible.png' | relative_url }}" alt="{{ project.title }}">
+              {% elsif project.image %}
+                {% assign image_name = project.image %}
+                {% assign first_four = image_name | slice: 0, 4 %}
+                {% assign first_character = image_name | slice: 0, 1 %}
 
-              {% if first_four == "http" %}
-                <img class="home-project-image" src="{{ image_name }}" alt="{{ project.title }}">
-              {% elsif image_name contains "assets/" %}
-                {% if first_character == "/" %}
-                  <img class="home-project-image" src="{{ image_name | relative_url }}" alt="{{ project.title }}">
+                {% if first_four == "http" %}
+                  <img class="home-project-image" src="{{ image_name }}" alt="{{ project.title }}">
+                {% elsif image_name contains "assets/" %}
+                  {% if first_character == "/" %}
+                    <img class="home-project-image" src="{{ image_name | relative_url }}" alt="{{ project.title }}">
+                  {% else %}
+                    {% assign full_asset_path = "/" | append: image_name %}
+                    <img class="home-project-image" src="{{ full_asset_path | relative_url }}" alt="{{ project.title }}">
+                  {% endif %}
                 {% else %}
-                  {% assign full_asset_path = "/" | append: image_name %}
-                  <img class="home-project-image" src="{{ full_asset_path | relative_url }}" alt="{{ project.title }}">
+                  {% assign image_path = "/assets/images/" | append: image_name %}
+                  <img class="home-project-image" src="{{ image_path | relative_url }}" alt="{{ project.title }}">
                 {% endif %}
               {% else %}
-                {% assign image_path = "/assets/images/" | append: image_name %}
-                <img class="home-project-image" src="{{ image_path | relative_url }}" alt="{{ project.title }}">
+                <div class="project-placeholder">{{ project.title }}</div>
               {% endif %}
-            {% else %}
-              <div class="project-placeholder">{{ project.title }}</div>
-            {% endif %}
 
-            <div class="home-project-label">{{ project.title }}</div>
-          </a>
-        {% endunless %}
+              <div class="home-project-label">{{ project.title }}</div>
+            </a>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </div>
   </section>
