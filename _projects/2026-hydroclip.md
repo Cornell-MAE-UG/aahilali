@@ -16,7 +16,7 @@ image: /assets/images/hydroclip/hydroclip-spring-guide.png
       <div class="hc-hero-actions">
         <a class="hc-report-button" href="{{ '/assets/HydroClip-Final-Report.pdf' | relative_url }}" download>
           <i class="bi bi-download" aria-hidden="true"></i>
-          Download Final Report
+          View Final Report
         </a>
       </div>
 
