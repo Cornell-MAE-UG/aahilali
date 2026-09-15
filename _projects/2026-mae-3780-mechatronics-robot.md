@@ -90,10 +90,10 @@ permalink: /projects/mechatronics-robot/
     <div class="mech-control-grid">
       <div class="mech-copy">
         <p>
-          Rather than using a separate cube detection system, the robot continuously covered the field and collected cubes through its forward motion. The guide geometry funneled cubes into the robot perimeter, allowing the collection system to work passively while the sensor and controller concentrated on keeping the robot on the playing surface and moving through different areas of the board.
+          The robot collected cubes passively as it moved through the field. Guide geometry directed cubes into the robot perimeter while the color sensor and controller handled boundary detection and navigation.
         </p>
         <p>
-          When the border was detected, the controller stopped the robot, reversed away from the edge, rotated back into the field, moved forward, and then applied a variable additional turn. Changing the turn duration reduced the chance of repeating the same trajectory, which helped the robot reach different cube locations while connecting sensor calibration, interrupt based timing, decision logic, and motor commands in one loop.
+          When the black border was detected, the robot backed away, turned back into the field, and resumed forward motion with a variable additional turn to avoid repeating the same path.
         </p>
       </div>
 
