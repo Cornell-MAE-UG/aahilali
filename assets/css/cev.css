@@ -72,7 +72,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 17px;
+  min-height: 46px;
+  padding: 0 17px;
   border: 1px solid #555;
   color: #f4f4f4 !important;
   text-decoration: none;
@@ -88,7 +89,9 @@
 }
 
 .cev-btn-secondary {
-  background: transparent;
+  background: #efefef;
+  border-color: #efefef;
+  color: #080808 !important;
 }
 
 .cev-btn:hover {
@@ -96,6 +99,17 @@
   background: #efefef;
   border-color: #efefef;
   color: #080808 !important;
+}
+
+.cev-btn-secondary:hover {
+  background: transparent;
+  border-color: #efefef;
+  color: #f4f4f4 !important;
+}
+
+.cev-btn:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.85);
+  outline-offset: 3px;
 }
 
 .cev-hero-image-wrap {
