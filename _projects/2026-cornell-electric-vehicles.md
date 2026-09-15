@@ -13,7 +13,7 @@ image: https://www.cornellelectricvehicles.org/vehicles/car-mask.webp
       <p class="cev-page-subtitle">General overview of my work on Cornell Electric Vehicles, with a focus on the acceleration pedal assembly and steering-system layout for the 2026 vehicle.</p>
       <div class="cev-hero-actions">
         <a class="cev-btn cev-btn-primary" href="https://www.cornellelectricvehicles.org/" target="_blank" rel="noopener">Learn More About CEV</a>
-        <a class="cev-btn cev-btn-secondary" href="{{ '/assets/cev-full-technical-report.pdf' | relative_url }}" target="_blank" rel="noopener">View Full Technical Report</a>
+        <a class="cev-btn cev-btn-secondary" href="{{ '/assets/cev-full-technical-report.pdf' | relative_url }}" target="_blank" rel="noopener">View Final Technical Report</a>
       </div>
       <div class="cev-hero-image-wrap"><img class="cev-hero-image" src="https://www.cornellelectricvehicles.org/vehicles/car-mask.webp" alt="Cornell Electric Vehicles competition car"></div>
     </div>
