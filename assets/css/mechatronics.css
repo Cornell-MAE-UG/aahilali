@@ -107,10 +107,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  min-height: 44px;
-  padding: 0 16px;
-  border: 1px solid rgba(89, 196, 199, 0.70);
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid #59c4c7;
   border-radius: 5px;
   background: #59c4c7;
   color: #061016 !important;
@@ -119,7 +118,7 @@
   font-weight: 700;
   line-height: 1;
   text-decoration: none !important;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
   transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
 }
 
@@ -127,7 +126,7 @@
   transform: translateY(-2px);
   background: transparent;
   color: #dff8f8 !important;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
 }
 
 .mech-section {
@@ -210,37 +209,90 @@
   font-weight: 600;
 }
 
+.mech-diagram {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+  background: #0b141a;
+  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.18);
+}
+
+.mech-diagram-wide {
+  margin-top: 38px;
+}
+
+.mech-diagram a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  background: #f4f6f7;
+  text-decoration: none;
+}
+
+.mech-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.22s ease;
+}
+
+.mech-diagram-wide a {
+  aspect-ratio: 16 / 8.3;
+}
+
+.mech-diagram-wide img {
+  height: 100%;
+}
+
+.mech-diagram-flow a {
+  min-height: 520px;
+  max-height: 650px;
+  padding: 10px;
+}
+
+.mech-diagram-flow img {
+  width: auto;
+  max-width: 100%;
+  max-height: 630px;
+}
+
+.mech-diagram a:hover img {
+  transform: scale(1.008);
+}
+
+.mech-diagram figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 13px 16px 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0b141a;
+}
+
+.mech-diagram figcaption strong {
+  color: #e6eff2;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.mech-diagram figcaption span {
+  color: #80939c;
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
 .mech-control-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.58fr);
+  grid-template-columns: minmax(0, 1fr) minmax(330px, 0.72fr);
   gap: 55px;
   align-items: start;
   margin-top: 48px;
   padding-top: 42px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.mech-sequence {
-  padding: 24px;
-  border: 1px solid rgba(89, 196, 199, 0.18);
-  border-radius: 7px;
-  background: rgba(89, 196, 199, 0.045);
-}
-
-.mech-sequence ol {
-  margin: 0;
-  padding-left: 21px;
-  color: #c7d6db;
-}
-
-.mech-sequence li {
-  margin-bottom: 13px;
-  padding-left: 5px;
-  line-height: 1.6;
-}
-
-.mech-sequence li:last-child {
-  margin-bottom: 0;
 }
 
 .mech-code-section {
@@ -348,6 +400,10 @@
     gap: 32px;
   }
 
+  .mech-diagram-flow {
+    width: min(620px, 100%);
+  }
+
   .mech-code-intro {
     display: block;
   }
@@ -364,6 +420,24 @@
 
   .mech-specs {
     grid-template-columns: 1fr;
+  }
+
+  .mech-diagram-wide a {
+    aspect-ratio: auto;
+  }
+
+  .mech-diagram-wide img {
+    height: auto;
+  }
+
+  .mech-diagram-flow a {
+    min-height: 0;
+    padding: 6px;
+  }
+
+  .mech-diagram-flow img {
+    width: 100%;
+    max-height: none;
   }
 
   .mech-code-window pre {
