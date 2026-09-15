@@ -77,7 +77,7 @@ title: Home
     <h2 class="projects-title">PROJECTS</h2>
 
     <div class="projects-grid">
-      {% assign ordered_project_urls = "/projects/cornell-electric-vehicles/|/projects/lefiell-manufacturing/|/projects/ansys/|/projects/hydroclip/|/projects/fluid-mechanical-dissection/" | split: "|" %}
+      {% assign ordered_project_urls = "/projects/cornell-electric-vehicles/|/projects/lefiell-manufacturing/|/projects/ansys/|/projects/hydroclip/|/projects/mechatronics-robot/|/projects/fluid-mechanical-dissection/" | split: "|" %}
 
       {% for project_url in ordered_project_urls %}
         {% for project in site.projects %}
@@ -88,6 +88,8 @@ title: Home
 
               {% if project.url == '/projects/ansys/' %}
                 <img class="home-project-image" src="{{ '/assets/images/ansys/pressure-mach-1-3-compressible.png' | relative_url }}" alt="{{ project.title }}">
+              {% elsif project.url == '/projects/mechatronics-robot/' %}
+                <img class="home-project-image" style="object-fit: contain; object-position: center; background: #f7f7f7; padding: 8px;" src="{{ '/assets/images/mechatronics/mechatronics-electrical-schematic.png' | relative_url }}" alt="{{ project.title }}">
               {% elsif project.url == '/projects/fluid-mechanical-dissection/' %}
                 <img class="home-project-image home-project-image-fluid" style="object-fit: contain; object-position: center; background: #c8c8c8; padding: 6px 0;" src="{{ '/assets/images/fluid-mechanical-dissection.png' | relative_url }}" alt="{{ project.title }}">
               {% elsif project.image %}
