@@ -25,7 +25,6 @@ permalink: /projects/mechatronics-robot/
 
     <div class="mech-actions">
       <a class="mech-button" href="{{ '/assets/MAE-3780-Final-Technical-Report.pdf' | relative_url }}" target="_blank" rel="noopener">
-        <i class="bi bi-file-earmark-pdf"></i>
         View Final Technical Report
       </a>
     </div>
