@@ -22,6 +22,13 @@ permalink: /projects/mechatronics-robot/
       <span class="mech-tag">Motor Control</span>
       <span class="mech-tag">System Integration</span>
     </div>
+
+    <div class="mech-actions">
+      <a class="mech-button" href="{{ '/assets/MAE-3780-Final-Technical-Report.pdf' | relative_url }}" target="_blank" rel="noopener">
+        <i class="bi bi-file-earmark-pdf"></i>
+        Click Here for Full Technical Report
+      </a>
+    </div>
   </div>
 </section>
 
