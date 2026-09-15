@@ -77,6 +77,16 @@ permalink: /projects/mechatronics-robot/
       </div>
     </div>
 
+    <figure class="mech-diagram mech-diagram-wide">
+      <a href="{{ '/assets/images/mechatronics/mechatronics-electrical-schematic.png' | relative_url }}" target="_blank" rel="noopener">
+        <img src="{{ '/assets/images/mechatronics/mechatronics-electrical-schematic.png' | relative_url }}" alt="Electrical schematic showing the Arduino Uno, TCS3200 color sensor, motor drivers, motors, and power connections">
+      </a>
+      <figcaption>
+        <strong>Electrical schematic</strong>
+        <span>Arduino Uno, TCS3200 color sensing, dual motor drivers, DC motors, and the 6 V power system.</span>
+      </figcaption>
+    </figure>
+
     <div class="mech-control-grid">
       <div class="mech-copy">
         <p>
@@ -87,16 +97,15 @@ permalink: /projects/mechatronics-robot/
         </p>
       </div>
 
-      <div class="mech-sequence">
-        <ol>
-          <li>Drive forward while sampling the color sensor.</li>
-          <li>Average five pulse width measurements.</li>
-          <li>Compare the average against the calibrated black threshold.</li>
-          <li>If the border is detected, stop and reverse away from the edge.</li>
-          <li>Rotate approximately 180 degrees and move back into the field.</li>
-          <li>Apply a variable additional turn before resuming forward motion.</li>
-        </ol>
-      </div>
+      <figure class="mech-diagram mech-diagram-flow">
+        <a href="{{ '/assets/images/mechatronics/mechatronics-control-flowchart.png' | relative_url }}" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/mechatronics/mechatronics-control-flowchart.png' | relative_url }}" alt="Flowchart of the autonomous robot sensing and navigation control logic">
+        </a>
+        <figcaption>
+          <strong>Control logic</strong>
+          <span>Sensor sampling, boundary detection, recovery motion, and variable turn behavior.</span>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
