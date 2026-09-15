@@ -9,7 +9,7 @@ permalink: /projects/mechatronics-robot/
     <p class="mech-kicker">MAE 3780 · Mechatronics</p>
     <h1 class="mech-title">Autonomous Mechatronics Robot</h1>
     <p class="mech-lede">
-      An autonomous mobile robot developed around sensing, embedded control, motor actuation, and system integration. The robot used color sensing to recognize the field boundary, low level AVR programming to process sensor pulses, and differential motor control to navigate the competition field while collecting cubes.
+      An autonomous mobile robot developed around sensing, embedded control, motor actuation, system integration, and passive cube collection. The robot used color sensing to recognize the field boundary, low level AVR programming to process sensor pulses, and differential motor control to navigate the competition field while gathering cubes within its perimeter.
     </p>
 
     <div class="mech-tags" aria-label="Project skills">
@@ -35,7 +35,7 @@ permalink: /projects/mechatronics-robot/
 <section class="mech-section">
   <div class="mech-shell">
     <p class="mech-eyebrow">System Overview</p>
-    <h2 class="mech-section-title">Sensing, control, and motion in one autonomous system</h2>
+    <h2 class="mech-section-title">Sensing, control, collection, and motion in one autonomous system</h2>
 
     <div class="mech-system-grid">
       <div class="mech-copy">
@@ -44,6 +44,9 @@ permalink: /projects/mechatronics-robot/
         </p>
         <p>
           Five sensor readings were averaged before each boundary decision. A calibrated threshold separated the black border from the rest of the playing field. This reduced sensitivity to individual readings and gave the control loop a simple, repeatable trigger for changing direction.
+        </p>
+        <p>
+          Cube collection was handled mechanically while the electronics focused on navigation. The front guide geometry directed cubes toward openings along the sides of the robot, and the surrounding retention geometry helped keep collected cubes within the robot perimeter as it continued moving around the field.
         </p>
       </div>
 
@@ -77,12 +80,11 @@ permalink: /projects/mechatronics-robot/
 
     <div class="mech-control-grid">
       <div class="mech-copy">
-        <h3 class="mech-subheading">Control strategy</h3>
         <p>
-          The software was intentionally kept direct. Rather than adding a more complex cube detection system, the robot continuously moved through the field and used the black border as its primary navigation reference. The collection geometry guided cubes into the robot perimeter as it covered different regions of the board.
+          Rather than using a separate cube detection system, the robot continuously covered the field and collected cubes through its forward motion. The guide geometry funneled cubes into the robot perimeter, allowing the collection system to work passively while the sensor and controller concentrated on keeping the robot on the playing surface and moving through different areas of the board.
         </p>
         <p>
-          When the border was detected, the controller stopped the robot, reversed away from the edge, rotated back into the field, moved forward, and then applied a variable additional turn. Changing the turn duration reduced the chance of repeating the same trajectory and connected sensor calibration, interrupt based timing, decision logic, and motor commands in one loop.
+          When the border was detected, the controller stopped the robot, reversed away from the edge, rotated back into the field, moved forward, and then applied a variable additional turn. Changing the turn duration reduced the chance of repeating the same trajectory, which helped the robot reach different cube locations while connecting sensor calibration, interrupt based timing, decision logic, and motor commands in one loop.
         </p>
       </div>
 
@@ -109,7 +111,7 @@ permalink: /projects/mechatronics-robot/
       </div>
       <div class="mech-copy">
         <p>
-          The program directly configures AVR data direction registers, Timer1, and pin change interrupts instead of relying only on high level Arduino functions. The sensor routine measures pulse width, averages multiple samples, detects the black boundary, and coordinates the motor response.
+          The program directly configures AVR data direction registers, Timer1, and pin change interrupts to handle sensing and timing close to the hardware. The sensor routine measures pulse width, averages multiple samples, detects the black boundary, and coordinates the motor response.
         </p>
       </div>
     </div>
