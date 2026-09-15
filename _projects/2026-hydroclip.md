@@ -14,8 +14,7 @@ image: /assets/images/hydroclip/hydroclip-spring-guide.png
       <p class="hc-subtitle">A backpack mounted water bottle retention system redesigned from a functional prototype around manufacturability, assembly, and production scale decisions.</p>
 
       <div class="hc-hero-actions">
-        <a class="hc-report-button" href="{{ '/assets/HydroClip-Final-Report.pdf' | relative_url }}" download>
-          <i class="bi bi-download" aria-hidden="true"></i>
+        <a class="hc-report-button" href="{{ '/assets/HydroClip-Final-Report.pdf' | relative_url }}" target="_blank" rel="noopener">
           View Final Report
         </a>
       </div>
