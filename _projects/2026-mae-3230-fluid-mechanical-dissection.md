@@ -77,7 +77,6 @@ image: /assets/images/fluid-mechanical-dissection.png
           </div>
 
           <a class="fm-report-button" href="{{ '/assets/Fluids Final Project - Google Docs.pdf' | relative_url }}" target="_blank" rel="noopener">
-            <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i>
             View Final Technical Report
           </a>
         </aside>
