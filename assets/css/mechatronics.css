@@ -3,28 +3,25 @@
    ============================================ */
 
 .mechatronics-body {
-  background: #0e0f10;
-  color: #e7e3dc;
+  background: #0f1113;
+  color: #e4e7e9;
 }
 
 .mechatronics-body .site-header,
 .mechatronics-body .site-footer {
-  background: #0e0f10;
+  background: #0f1113;
   border-color: rgba(255, 255, 255, 0.08);
 }
 
 .mechatronics-body .navbar-brand,
 .mechatronics-body .site-header .nav-link {
-  color: #f7f4ee !important;
+  color: #f5f6f7 !important;
 }
 
 .mechatronics-project {
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 8% 0%, rgba(215, 164, 73, 0.12), transparent 32%),
-    radial-gradient(circle at 92% 34%, rgba(111, 78, 31, 0.08), transparent 30%),
-    #0e0f10;
-  color: #e7e3dc;
+  background: #0f1113;
+  color: #e4e7e9;
   font-family: "Inter", Arial, sans-serif;
 }
 
@@ -41,7 +38,7 @@
 .mech-kicker,
 .mech-eyebrow {
   margin: 0 0 16px;
-  color: #d7a449;
+  color: #aeb6bd;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -51,7 +48,7 @@
 .mech-title {
   max-width: 900px;
   margin: 0;
-  color: #f7f3eb;
+  color: #f4f5f6;
   font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(3.3rem, 7vw, 6.1rem);
   font-weight: 600;
@@ -62,7 +59,7 @@
 .mech-lede {
   max-width: 850px;
   margin: 30px 0 0;
-  color: #bdb6aa;
+  color: #b3bac0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.14rem;
   line-height: 1.85;
@@ -80,10 +77,10 @@
   align-items: center;
   gap: 8px;
   padding: 9px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 5px;
-  background: rgba(215, 164, 73, 0.04);
-  color: #d3cdc3;
+  background: rgba(255, 255, 255, 0.025);
+  color: #cbd0d4;
   font-size: 0.83rem;
   font-weight: 600;
 }
@@ -93,7 +90,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #d7a449;
+  background: #aeb6bd;
 }
 
 .mech-actions {
@@ -109,24 +106,24 @@
   justify-content: center;
   min-height: 46px;
   padding: 0 18px;
-  border: 1px solid #d7a449;
+  border: 1px solid #e5e8ea;
   border-radius: 5px;
-  background: #d7a449;
-  color: #17130d !important;
+  background: #e5e8ea;
+  color: #111315 !important;
   font-family: "Inter", Arial, sans-serif;
   font-size: 0.84rem;
   font-weight: 700;
   line-height: 1;
   text-decoration: none !important;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
   transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .mech-button:hover {
   transform: translateY(-2px);
   background: transparent;
-  color: #ffe6b7 !important;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.30);
+  color: #f3f5f6 !important;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
 }
 
 .mech-section {
@@ -142,7 +139,7 @@
 .mech-section-title {
   max-width: 820px;
   margin: 0;
-  color: #f4f0e8;
+  color: #f1f3f4;
   font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(2.3rem, 4vw, 3.5rem);
   line-height: 1.08;
@@ -151,7 +148,7 @@
 
 .mech-subheading {
   margin: 0 0 14px;
-  color: #f4f0e8;
+  color: #f1f3f4;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.55rem;
   font-weight: 600;
@@ -159,7 +156,7 @@
 }
 
 .mech-copy {
-  color: #bbb4a8;
+  color: #afb6bb;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.04rem;
   line-height: 1.82;
@@ -189,14 +186,14 @@
 
 .mech-spec {
   padding: 17px;
-  border: 1px solid rgba(215, 164, 73, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.10);
   border-radius: 6px;
-  background: rgba(215, 164, 73, 0.04);
+  background: rgba(255, 255, 255, 0.025);
 }
 
 .mech-spec-label {
   margin-bottom: 5px;
-  color: #9c8b6f;
+  color: #838c93;
   font-size: 0.70rem;
   font-weight: 700;
   letter-spacing: 0.13em;
@@ -204,7 +201,7 @@
 }
 
 .mech-spec-value {
-  color: #f0ece4;
+  color: #edf0f2;
   font-size: 0.93rem;
   font-weight: 600;
 }
@@ -212,10 +209,10 @@
 .mech-diagram {
   margin: 0;
   overflow: hidden;
-  border: 1px solid rgba(215, 164, 73, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 10px;
-  background: #151514;
-  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.20);
+  background: #16191c;
+  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.18);
 }
 
 .mech-diagram-wide {
@@ -228,7 +225,7 @@
   justify-content: center;
   width: 100%;
   overflow: hidden;
-  background: #f4f4f2;
+  background: #f4f5f5;
   text-decoration: none;
 }
 
@@ -270,17 +267,17 @@
   gap: 4px;
   padding: 13px 16px 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: #151514;
+  background: #16191c;
 }
 
 .mech-diagram figcaption strong {
-  color: #eee9df;
+  color: #e9ecee;
   font-size: 0.82rem;
   font-weight: 700;
 }
 
 .mech-diagram figcaption span {
-  color: #9a9183;
+  color: #879198;
   font-size: 0.76rem;
   line-height: 1.45;
 }
@@ -296,7 +293,7 @@
 }
 
 .mech-code-section {
-  background: rgba(22, 15, 8, 0.30);
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .mech-code-intro {
@@ -313,10 +310,10 @@
 
 .mech-code-window {
   overflow: hidden;
-  border: 1px solid rgba(215, 164, 73, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 9px;
-  background: #060606;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
+  background: #070809;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.30);
 }
 
 .mech-code-toolbar {
@@ -326,17 +323,17 @@
   gap: 16px;
   padding: 13px 17px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: #151514;
+  background: #16191c;
 }
 
 .mech-code-title {
-  color: #eee9df;
+  color: #e9ecee;
   font-size: 0.82rem;
   font-weight: 700;
 }
 
 .mech-code-note {
-  color: #918777;
+  color: #808a91;
   font-size: 0.72rem;
 }
 
@@ -354,7 +351,7 @@
   margin: 0;
   padding: 24px 26px;
   background: transparent !important;
-  color: #e2ddd5;
+  color: #d8dde0;
   font-size: 0.81rem;
   line-height: 1.62;
   tab-size: 2;
@@ -367,22 +364,22 @@
 .mech-code-window .c,
 .mech-code-window .c1,
 .mech-code-window .cm {
-  color: #81796f;
+  color: #747d83;
 }
 
 .mech-code-window .k,
 .mech-code-window .kt,
 .mech-code-window .cp {
-  color: #e4b86a;
+  color: #c7d0d6;
 }
 
 .mech-code-window .nf,
 .mech-code-window .n {
-  color: #eee9df;
+  color: #edf0f2;
 }
 
 .mech-code-window .mi {
-  color: #d6b27a;
+  color: #b8c0c6;
 }
 
 @media (max-width: 900px) {
