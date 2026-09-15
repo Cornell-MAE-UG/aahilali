@@ -22,7 +22,7 @@ title: Home
       <div class="home-links">
         <a
           class="resume-download"
-          href="{{ '/assets/AahilAli-Resume.pdf' | relative_url }}"
+          href="{{ '/assets/Aahil-Ali-Mechanical-Engineering-Resume.pdf' | relative_url }}"
           target="_blank"
           rel="noopener">
           <i class="bi bi-file-earmark-person"></i>
