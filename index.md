@@ -21,15 +21,6 @@ title: Home
 
       <div class="home-links">
         <a
-          class="resume-download"
-          href="{{ '/assets/Aahil-Ali-Resume.pdf' | relative_url }}"
-          target="_blank"
-          rel="noopener">
-          <i class="bi bi-file-earmark-person"></i>
-          Download Resume
-        </a>
-
-        <a
           class="linkedin-button"
           href="https://www.linkedin.com/in/aahil-ali/"
           target="_blank"

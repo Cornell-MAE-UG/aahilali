@@ -58,7 +58,6 @@ Change references to "Your Name" to your actual name in the following files:
 - `_config.yml`
 - `index.md`
 - `projects.md`
-- `cv.md`
 
 ### Homepage
 - `index.md`: Replace the placeholder text with a welcome or pitch paragraph about yourself.
@@ -72,10 +71,6 @@ Change references to "Your Name" to your actual name in the following files:
 - You can also develop another ordering by naming the projects with some numerical prefix.
 - The example project pages show you how to include code and images in the portfolio page.
 - Refer to the Jekyll Markdown documentation for other formatting tips
-
-### CV
-- `assets/CV.pdf`: Replace this placeholder with your own PDF CV.
-- You can either edit or delete the placeholder CV markdown text.
 
 ### Color Schemes
 
